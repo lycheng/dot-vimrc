@@ -59,10 +59,7 @@ Bundle 'nvie/vim-togglemouse'
 " Syntax/Indent for language enhancement
 "----------------------------------------
 "------- web backend ---------
-" Bundle '2072/PHP-Indenting-for-VIm'
-"Bundle 'tpope/vim-rails'
 Bundle 'lepture/vim-jinja'
-"Bundle 'digitaltoad/vim-jade'
 
 "------- web frontend ----------
 Bundle 'othree/html5.vim'
@@ -85,9 +82,9 @@ Bundle 'tpope/vim-markdown'
 " Bundle 'jnwhiteh/vim-golang'
 
 "------- FPs ------
-" Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'kien/rainbow_parentheses.vim'
 " Bundle 'wlangstroth/vim-racket'
-" Bundle 'vim-scripts/VimClojure'
+Bundle 'vim-scripts/VimClojure'
 " Bundle 'rosstimson/scala-vim-support'
 
 "--------------
