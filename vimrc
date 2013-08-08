@@ -23,7 +23,6 @@ set cursorline cursorcolumn
 
 " search
 set incsearch
-"set highlight 	" conflict with highlight current line
 set ignorecase
 set smartcase
 
@@ -34,11 +33,9 @@ set nofoldenable                                                  " disable fold
 set confirm                                                       " prompt when existing from an unsaved file
 set backspace=indent,eol,start                                    " More powerful backspacing
 set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
-set mouse=a                                                       " use mouse in all modes
 set report=0                                                      " always report number of lines changed                "
 set nowrap                                                        " dont wrap lines
 set scrolloff=5                                                   " 5 lines above/below cursor when scrolling
-set number                                                        " show line numbers
 set showmatch                                                     " show matching bracket (briefly jump)
 set showcmd                                                       " show typed command in status bar
 set title                                                         " show file in titlebar
@@ -111,7 +108,7 @@ let g:EasyMotion_leader_key = '9'
 
 " Tagbar
 let g:tagbar_right=1
-let g:tagbar_width=30
+let g:tagbar_width=20
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 let g:tagbar_compact = 1
@@ -142,7 +139,7 @@ endif
 
 " Nerd Tree
 let NERDChristmasTree=0
-let NERDTreeWinSize=30
+let NERDTreeWinSize=20
 let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 " let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
