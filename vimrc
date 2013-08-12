@@ -25,7 +25,7 @@ set cursorline cursorcolumn
 set incsearch
 set ignorecase
 set smartcase
-set foldcolumn=1
+set foldcolumn=4
 autocmd Colorscheme * highlight FoldColumn guifg=bg guibg=bg
 
 " editor settings
@@ -141,7 +141,7 @@ endif
 
 " Nerd Tree
 let NERDChristmasTree=0
-let NERDTreeWinSize=20
+let NERDTreeWinSize=25
 let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 " let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
