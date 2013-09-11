@@ -26,6 +26,7 @@ Bundle 'tomtom/tlib_vim'
 "-----------------
 Bundle 'tsaleh/vim-matchit'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'terryma/vim-multiple-cursors'
 
 "--------------
 " Fast editing
