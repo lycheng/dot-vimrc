@@ -80,7 +80,7 @@ Bundle 'tpope/vim-markdown'
 " Bundle 'tpope/vim-endwise'
 
 "------- Go ----------
-" Bundle 'jnwhiteh/vim-golang'
+Bundle 'jnwhiteh/vim-golang'
 
 "------- FPs ------
 Bundle 'kien/rainbow_parentheses.vim'

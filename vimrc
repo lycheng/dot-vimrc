@@ -194,6 +194,7 @@ nmap <F6> :TagbarToggle<cr>
 nmap <F5> :NERDTreeToggle<cr>
 nmap <F3> :GundoToggle<cr>
 nmap <F4> :IndentGuidesToggle<cr>
+set pastetoggle=<F9>
 nmap  <D-/> :
 nnoremap <leader>a :Ack
 nnoremap <leader>v V`]
