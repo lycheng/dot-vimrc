@@ -109,7 +109,7 @@ let g:EasyMotion_leader_key = '9'
 
 " Tagbar
 let g:tagbar_right=1
-let g:tagbar_width=20
+let g:tagbar_width=30
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 let g:tagbar_compact = 1
