@@ -66,7 +66,7 @@ Bundle 'nvie/vim-togglemouse'
 "------- web backend ---------
 Bundle 'lepture/vim-jinja'
 Bundle 'kevinw/pyflakes-vim'
-Bundle 'davidhalter/jedi-vim'
+" Bundle 'davidhalter/jedi-vim'
 
 "------- web frontend ----------
 Bundle 'othree/html5.vim'
@@ -74,9 +74,9 @@ Bundle 'othree/html5.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'nono/jquery.vim'
- Bundle 'groenewege/vim-less'
- Bundle 'wavded/vim-stylus'
- Bundle 'nono/vim-handlebars'
+Bundle 'groenewege/vim-less'
+Bundle 'wavded/vim-stylus'
+Bundle 'nono/vim-handlebars'
 
 "------- markup language -------
 Bundle 'tpope/vim-markdown'
