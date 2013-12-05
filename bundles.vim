@@ -15,7 +15,6 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'garbas/vim-snipmate'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/snipmate-snippets'
-Bundle 'mattn/zencoding-vim'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'ervandew/supertab'
@@ -67,6 +66,7 @@ Bundle 'nvie/vim-togglemouse'
 "------- web backend ---------
 Bundle 'lepture/vim-jinja'
 Bundle 'kevinw/pyflakes-vim'
+" Bundle 'davidhalter/jedi-vim'
 
 "------- web frontend ----------
 Bundle 'othree/html5.vim'
