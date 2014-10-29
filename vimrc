@@ -13,8 +13,9 @@ syntax on
 " Vim UI
 "--------
 " color scheme
+set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
 set background=dark
-color vividchalk
+color distinguished
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -34,7 +35,6 @@ set nocompatible
 set nofoldenable                                                  " disable folding"
 set confirm                                                       " prompt when existing from an unsaved file
 set backspace=indent,eol,start                                    " More powerful backspacing
-set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
 set report=0                                                      " always report number of lines changed                "
 set nowrap                                                        " dont wrap lines
 set scrolloff=5                                                   " 5 lines above/below cursor when scrolling
