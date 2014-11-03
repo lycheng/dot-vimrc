@@ -26,7 +26,7 @@ set cursorline cursorcolumn
 set incsearch
 set ignorecase
 set smartcase
-set foldcolumn=4
+" set foldcolumn=4
 autocmd Colorscheme * highlight FoldColumn guifg=bg guibg=bg
 
 " editor settings
