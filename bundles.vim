@@ -73,14 +73,13 @@ Bundle 'kevinw/pyflakes-vim'
 
 "------- web frontend ----------
 Bundle 'othree/html5.vim'
-" Bundle 'tpope/vim-haml'
 Bundle 'jelera/vim-javascript-syntax'
-" Bundle 'pangloss/vim-javascript'
-" Bundle 'kchmck/vim-coffee-script'
 Bundle 'nono/jquery.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'wavded/vim-stylus'
 Bundle 'nono/vim-handlebars'
+Bundle 'pangloss/vim-javascript'
+Bundle 'kchmck/vim-coffee-script'
 
 "------- markup language -------
 Bundle 'tpope/vim-markdown'
@@ -91,12 +90,6 @@ Bundle 'tpope/vim-markdown'
 
 "------- Go ----------
 Bundle 'fatih/vim-go'
-
-"------- FPs ------
-Bundle 'othree/html5.vim'
-Bundle 'pangloss/vim-javascript'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'nono/jquery.vim'
 
 "--------------
 " Color Schemes
