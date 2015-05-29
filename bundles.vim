@@ -90,13 +90,13 @@ Bundle 'tpope/vim-markdown'
 " Bundle 'tpope/vim-endwise'
 
 "------- Go ----------
-Bundle 'jnwhiteh/vim-golang'
+Bundle 'fatih/vim-go'
 
 "------- FPs ------
-Bundle 'kien/rainbow_parentheses.vim'
-" Bundle 'wlangstroth/vim-racket'
-Bundle 'vim-scripts/VimClojure'
-" Bundle 'rosstimson/scala-vim-support'
+Bundle 'othree/html5.vim'
+Bundle 'pangloss/vim-javascript'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'nono/jquery.vim'
 
 "--------------
 " Color Schemes
