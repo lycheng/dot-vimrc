@@ -205,7 +205,7 @@ let g:ycm_filetype_blacklist = {
 
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_custom_ignore = 'node_modules\|\.git$\|\.hg$\|\.svn$'
 
 " Keybindings for plugin toggle
 nmap <F6> :TagbarToggle<cr>
