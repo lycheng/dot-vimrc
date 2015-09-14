@@ -56,6 +56,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'hynek/vim-python-pep8-indent'
 
 "-------------
 " Other Utils
