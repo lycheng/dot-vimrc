@@ -152,6 +152,9 @@ let NERDSpaceDelims=1
 " nmap <D-/> :NERDComToggleComment<cr>
 let NERDCompactSexyComs=1
 
+" the_silver_searcher
+let g:ag_prg="ag --vimgrep"
+
 " ZenCoding
 let g:user_emmet_expandabbr_key='<C-j>'
 
@@ -217,7 +220,7 @@ nmap <F4> :IndentGuidesToggle<cr>
 au BufRead *.py map <buffer> <F8> :w<CR>:!/usr/bin/env python2 % <CR>
 set pastetoggle=<F9>
 nmap  <D-/> :
-nnoremap <leader>a :Ack
+nnoremap <leader>a :Ag 
 nnoremap <leader>v V`]
 
 "------------------
