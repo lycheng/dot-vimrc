@@ -15,7 +15,7 @@ syntax on
 " color scheme
 set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
 set background=dark
-color vividchalk
+color molokai
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -26,6 +26,7 @@ set cursorline cursorcolumn
 set incsearch
 set ignorecase
 set smartcase
+set hlsearch
 " set foldcolumn=4
 autocmd Colorscheme * highlight FoldColumn guifg=bg guibg=bg
 
