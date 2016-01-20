@@ -70,7 +70,7 @@ Bundle 'nvie/vim-togglemouse'
 "----------------------------------------
 "------- web backend ---------
 Bundle 'lepture/vim-jinja'
-Bundle 'kevinw/pyflakes-vim'
+" Bundle 'kevinw/pyflakes-vim'
 " Bundle 'davidhalter/jedi-vim'
 
 "------- web frontend ----------
