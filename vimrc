@@ -188,12 +188,6 @@ if !exists('g:neocomplcache_omni_patterns')
 endif
 let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
 
-" SuperTab
-" let g:SuperTabDefultCompletionType='context'
-" let g:SuperTabDefaultCompletionType = '<C-X><C-U>'
-" let g:SuperTabRetainCompletionType=2
-
-
 " YCM
 let g:ycm_filetype_blacklist = {
       \ 'tagbar' : 1,
@@ -221,7 +215,7 @@ nmap <F4> :IndentGuidesToggle<cr>
 au BufRead *.py map <buffer> <F8> :w<CR>:!/usr/bin/env python2 % <CR>
 set pastetoggle=<F9>
 nmap  <D-/> :
-nnoremap <leader>a :Ag 
+nnoremap <leader>a :Ag
 nnoremap <leader>v V`]
 
 "------------------
@@ -284,3 +278,18 @@ if has("gui_running")
     map <D-9> 9gt
     map <D-0> :tablast<CR>
 endif
+
+" for golang
+" https://github.com/fatih/vim-go
+
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+
+au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
