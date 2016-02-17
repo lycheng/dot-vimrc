@@ -8,6 +8,7 @@ filetype plugin indent on
 
 " enable syntax hightlight and completion
 syntax on
+set completeopt-=preview
 
 "--------
 " Vim UI
