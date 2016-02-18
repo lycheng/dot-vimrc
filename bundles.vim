@@ -57,7 +57,6 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'hynek/vim-python-pep8-indent'
 
 "-------------
 " Other Utils
@@ -72,6 +71,8 @@ Bundle 'nvie/vim-togglemouse'
 Bundle 'lepture/vim-jinja'
 Bundle 'kevinw/pyflakes-vim'
 " Bundle 'davidhalter/jedi-vim'
+Bundle 'hynek/vim-python-pep8-indent'
+Bundle 'nvie/vim-flake8'
 
 "------- web frontend ----------
 Bundle 'othree/html5.vim'
