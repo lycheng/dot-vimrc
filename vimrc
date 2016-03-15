@@ -15,8 +15,7 @@ set completeopt-=preview
 "--------
 " color scheme
 set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
-set background=dark
-color molokai
+color dracula
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -65,7 +64,6 @@ autocmd FileType go setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 autocmd FileType html,htmldjango,xhtml,haml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
 autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 
-autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 
 " syntax support

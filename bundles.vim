@@ -97,13 +97,6 @@ Bundle 'fatih/vim-go'
 "--------------
 " Color Schemes
 "--------------
-Bundle 'rickharris/vim-blackboard'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'rickharris/vim-monokai'
-Bundle 'fatih/molokai'
-Bundle 'tpope/vim-vividchalk'
-Bundle 'Lokaltog/vim-distinguished'
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'fisadev/fisa-vim-colorscheme'
+Bundle 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 
 filetype plugin indent on     " required!
