@@ -11,17 +11,12 @@ Bundle 'gmarik/vundle'
 "------------------
 " Code Completions
 "------------------
-" Bundle 'Shougo/neocomplcache'
 Bundle 'garbas/vim-snipmate'
-" Bundle 'ervandew/supertab'
 Bundle 'scrooloose/snipmate-snippets'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
-" Bundle 'ervandew/supertab'
 Bundle 'Valloric/YouCompleteMe'
-" snippets
-" Bundle 'garbas/vim-snipmate'
-" Bundle 'honza/vim-snippets'
+
 "------ snipmate dependencies -------
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -69,7 +64,7 @@ Bundle 'nvie/vim-togglemouse'
 "----------------------------------------
 "------- web backend ---------
 Bundle 'lepture/vim-jinja'
-Bundle 'kevinw/pyflakes-vim'
+" Bundle 'kevinw/pyflakes-vim'
 " Bundle 'davidhalter/jedi-vim'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'nvie/vim-flake8'

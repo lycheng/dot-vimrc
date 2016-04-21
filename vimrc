@@ -161,9 +161,6 @@ let g:ag_prg="ag --vimgrep"
 " ZenCoding
 let g:user_emmet_expandabbr_key='<C-j>'
 
-" powerline
-"let g:Powerline_symbols = 'fancy'
-
 " YCM
 let g:ycm_filetype_blacklist = {
       \ 'tagbar' : 1,
