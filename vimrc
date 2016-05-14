@@ -15,7 +15,9 @@ set completeopt-=preview
 "--------
 " color scheme
 set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
-color dracula
+" color dracula
+colorscheme monokai
+
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -99,13 +101,13 @@ let g:rbpt_max = 16
 autocmd Syntax lisp,scheme,clojure,racket RainbowParenthesesToggle
 
 " tabbar
-let g:Tb_MaxSize = 2
-let g:Tb_TabWrap = 1
+" let g:Tb_MaxSize = 2
+" let g:Tb_TabWrap = 1
 
-hi Tb_Normal guifg=white ctermfg=white
-hi Tb_Changed guifg=green ctermfg=green
-hi Tb_VisibleNormal ctermbg=252 ctermfg=235
-hi Tb_VisibleChanged guifg=green ctermbg=252 ctermfg=white
+" hi Tb_Normal guifg=white ctermfg=white
+" hi Tb_Changed guifg=green ctermfg=green
+" hi Tb_VisibleNormal ctermbg=252 ctermfg=235
+" hi Tb_VisibleChanged guifg=green ctermbg=252 ctermfg=white
 
 " easy-motion
 let g:EasyMotion_leader_key = '9'
@@ -113,42 +115,17 @@ let g:EasyMotion_leader_key = '9'
 " Tagbar
 let g:tagbar_right=1
 let g:tagbar_width=30
-let g:tagbar_autofocus = 1
-let g:tagbar_sort = 0
-let g:tagbar_compact = 1
-" tag for coffee
-if executable('coffeetags')
-  let g:tagbar_type_coffee = {
-        \ 'ctagsbin' : 'coffeetags',
-        \ 'ctagsargs' : '',
-        \ 'kinds' : [
-        \ 'f:functions',
-        \ 'o:object',
-        \ ],
-        \ 'sro' : ".",
-        \ 'kind2scope' : {
-        \ 'f' : 'object',
-        \ 'o' : 'object',
-        \ }
-        \ }
-
-  let g:tagbar_type_markdown = {
-    \ 'ctagstype' : 'markdown',
-    \ 'sort' : 0,
-    \ 'kinds' : [
-        \ 'h:sections'
-    \ ]
-    \ }
-endif
+let g:tagbar_autofocus=1
+let g:tagbar_sort=0
+let g:tagbar_compact=1
 
 " Nerd Tree
 let NERDChristmasTree=0
 let NERDTreeWinSize=25
 let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
-" let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
 let NERDTreeShowBookmarks=1
-let NERDTreeWinPos = "left"
+let NERDTreeWinPos="left"
 
 " nerdcommenter
 let NERDSpaceDelims=1
@@ -254,7 +231,6 @@ endif
 
 " for golang
 " https://github.com/fatih/vim-go
-
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
@@ -266,3 +242,6 @@ au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 
 au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
+
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }

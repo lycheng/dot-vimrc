@@ -11,15 +11,15 @@ Bundle 'gmarik/vundle'
 "------------------
 " Code Completions
 "------------------
-Bundle 'garbas/vim-snipmate'
-Bundle 'scrooloose/snipmate-snippets'
+" Bundle 'honza/vim-snippets'
+" Bundle 'SirVer/ultisnips'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Valloric/YouCompleteMe'
 
 "------ snipmate dependencies -------
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
+" Bundle 'MarcWeber/vim-addon-mw-utils'
+" Bundle 'tomtom/tlib_vim'
 
 "-----------------
 " Fast navigation
@@ -64,8 +64,6 @@ Bundle 'nvie/vim-togglemouse'
 "----------------------------------------
 "------- web backend ---------
 Bundle 'lepture/vim-jinja'
-" Bundle 'kevinw/pyflakes-vim'
-" Bundle 'davidhalter/jedi-vim'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'nvie/vim-flake8'
 
@@ -81,10 +79,6 @@ Bundle 'kchmck/vim-coffee-script'
 
 "------- markup language -------
 Bundle 'tpope/vim-markdown'
-" Bundle 'timcharper/textile.vim'
-
-"------- Ruby --------
-" Bundle 'tpope/vim-endwise'
 
 "------- Go ----------
 Bundle 'fatih/vim-go'
@@ -93,5 +87,6 @@ Bundle 'fatih/vim-go'
 " Color Schemes
 "--------------
 Bundle 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Bundle 'sickill/vim-monokai'
 
 filetype plugin indent on     " required!
