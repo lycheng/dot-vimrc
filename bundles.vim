@@ -42,6 +42,7 @@ Bundle 'mhinz/vim-hugefile'
 " IDE features
 "--------------
 Bundle 'scrooloose/nerdtree'
+Bundle 'Xuyuanp/nerdtree-git-plugin'
 Bundle 'humiaozuzu/TabBar'
 Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'

@@ -127,6 +127,18 @@ let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 let NERDTreeShowBookmarks=1
 let NERDTreeWinPos="left"
 
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "*",
+    \ "Staged"    : "+",
+    \ "Untracked" : "*",
+    \ "Renamed"   : ">",
+    \ "Unmerged"  : "=",
+    \ "Deleted"   : "x",
+    \ "Dirty"     : "*",
+    \ "Clean"     : "~",
+    \ "Unknown"   : "?"
+    \ }
+
 " nerdcommenter
 let NERDSpaceDelims=1
 " nmap <D-/> :NERDComToggleComment<cr>
