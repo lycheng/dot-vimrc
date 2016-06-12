@@ -172,12 +172,11 @@ nmap <F6> :TagbarToggle<cr>
 nmap <F5> :NERDTreeToggle<cr>
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
-nmap <F3> :GundoToggle<cr>
 nmap <F4> :IndentGuidesToggle<cr>
 au BufRead *.py map <buffer> <F8> :w<CR>:!/usr/bin/env python2 % <CR>
 set pastetoggle=<F9>
 nmap  <D-/> :
-nnoremap <leader>a :Ag
+nnoremap <leader>a :Ag 
 nnoremap <leader>v V`]
 
 "------------------

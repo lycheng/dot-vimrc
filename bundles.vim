@@ -33,7 +33,6 @@ Bundle 'terryma/vim-multiple-cursors'
 "--------------
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'sjl/gundo.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'mhinz/vim-hugefile'
