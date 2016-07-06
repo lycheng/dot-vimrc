@@ -13,10 +13,8 @@ set completeopt-=preview
 "--------
 " Vim UI
 "--------
-" color scheme
-set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
-" color dracula
-colorscheme monokai
+syntax on
+color dracula
 
 
 " highlight current line
@@ -162,6 +160,9 @@ let g:ycm_filetype_blacklist = {
       \ 'infolog' : 1,
       \ 'mail' : 1
       \}
+
+highlight Pmenu ctermfg=white ctermbg=red
+highlight PmenuSel ctermfg=white ctermbg=blue
 
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux

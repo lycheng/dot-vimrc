@@ -86,7 +86,6 @@ Bundle 'fatih/vim-go'
 "--------------
 " Color Schemes
 "--------------
-Bundle 'zenorocha/dracula-theme', {'rtp': 'vim/'}
-Bundle 'sickill/vim-monokai'
+Bundle 'dracula/vim'
 
 filetype plugin indent on     " required!
