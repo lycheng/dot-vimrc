@@ -33,3 +33,27 @@ sudo ./install.py --clang-completer
 ```
 
 还有很多很多没写。。。
+
+
+## 主题
+
+目前使用的主题
+
+1. [dracula](https://github.com/dracula/vim)
+2. [vim-tomorrow-theme](https://github.com/chriskempson/vim-tomorrow-theme)
+
+
+配置
+
+```
+# for dracula
+syntax on
+color dracula
+
+# for tomorrow
+colorscheme Tomorrow-Night-Eighties
+" colorscheme Tomorrow-Night-Blue
+" colorscheme Tomorrow-Bright
+" colorscheme Tomorrow-Night
+" colorscheme Tomorrow
+```

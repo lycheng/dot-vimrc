@@ -14,8 +14,7 @@ set completeopt-=preview
 " Vim UI
 "--------
 syntax on
-color dracula
-
+colorscheme Tomorrow-Night-Bright
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn

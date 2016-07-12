@@ -87,5 +87,6 @@ Bundle 'fatih/vim-go'
 " Color Schemes
 "--------------
 Bundle 'dracula/vim'
+Bundle 'chriskempson/vim-tomorrow-theme'
 
 filetype plugin indent on     " required!
