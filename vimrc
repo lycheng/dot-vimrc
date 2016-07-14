@@ -97,15 +97,6 @@ let g:rbpt_colorpairs = [
 let g:rbpt_max = 16
 autocmd Syntax lisp,scheme,clojure,racket RainbowParenthesesToggle
 
-" tabbar
-" let g:Tb_MaxSize = 2
-" let g:Tb_TabWrap = 1
-
-" hi Tb_Normal guifg=white ctermfg=white
-" hi Tb_Changed guifg=green ctermfg=green
-" hi Tb_VisibleNormal ctermbg=252 ctermfg=235
-" hi Tb_VisibleChanged guifg=green ctermbg=252 ctermfg=white
-
 " easy-motion
 let g:EasyMotion_leader_key = '9'
 
@@ -115,6 +106,11 @@ let g:tagbar_width=30
 let g:tagbar_autofocus=1
 let g:tagbar_sort=0
 let g:tagbar_compact=1
+
+" lightline
+let g:lightline = {
+            \ 'colorscheme': 'seoul256',
+            \ }
 
 " Nerd Tree
 let NERDChristmasTree=0
@@ -217,28 +213,6 @@ nnoremap ; :
 :command Q q
 :command Qa qa
 :command QA qa
-
-" for macvim
-if has("gui_running")
-    set go=aAce  " remove toolbar
-    "set transparency=30
-    set guifont=Monaco:h13
-    set showtabline=2
-    set columns=140
-    set lines=40
-    noremap <D-M-Left> :tabprevious<cr>
-    noremap <D-M-Right> :tabnext<cr>
-    map <D-1> 1gt
-    map <D-2> 2gt
-    map <D-3> 3gt
-    map <D-4> 4gt
-    map <D-5> 5gt
-    map <D-6> 6gt
-    map <D-7> 7gt
-    map <D-8> 8gt
-    map <D-9> 9gt
-    map <D-0> :tablast<CR>
-endif
 
 " for golang
 " https://github.com/fatih/vim-go
