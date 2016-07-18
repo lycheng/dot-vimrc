@@ -107,10 +107,12 @@ let g:tagbar_autofocus=1
 let g:tagbar_sort=0
 let g:tagbar_compact=1
 
-" lightline
-let g:lightline = {
-            \ 'colorscheme': 'seoul256',
-            \ }
+" airline
+let g:airline_theme="wombat"
+let g:airline_powerline_fonts = 1
+
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#whitespace#symbol = '!'
 
 " Nerd Tree
 let NERDChristmasTree=0

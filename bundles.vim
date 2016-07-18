@@ -11,8 +11,6 @@ Bundle 'gmarik/vundle'
 "------------------
 " Code Completions
 "------------------
-" Bundle 'honza/vim-snippets'
-" Bundle 'SirVer/ultisnips'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Valloric/YouCompleteMe'
@@ -51,7 +49,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'itchyny/lightline.vim'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 
 "-------------
 " Other Utils
