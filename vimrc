@@ -13,8 +13,7 @@ set completeopt-=preview
 "--------
 " Vim UI
 "--------
-syntax on
-colorscheme Tomorrow-Night-Bright
+colorscheme distinguished
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -123,7 +122,7 @@ let NERDTreeShowBookmarks=1
 let NERDTreeWinPos="left"
 
 let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "*",
+    \ "Modified"  : "~",
     \ "Staged"    : "+",
     \ "Untracked" : "*",
     \ "Renamed"   : ">",

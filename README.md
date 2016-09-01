@@ -37,23 +37,11 @@ sudo ./install.py --clang-completer
 
 ## 主题
 
-目前使用的主题
-
-1. [dracula](https://github.com/dracula/vim)
-2. [vim-tomorrow-theme](https://github.com/chriskempson/vim-tomorrow-theme)
-
-
-配置
+当前使用的是一个 [vim-colorschemes](https://github.com/flazz/vim-colorschemes) 的插件，集成了各种主题，使用起来非常方便
 
 ```
-# for dracula
 syntax on
-color dracula
-
-# for tomorrow
-colorscheme Tomorrow-Night-Eighties
-" colorscheme Tomorrow-Night-Blue
-" colorscheme Tomorrow-Bright
-" colorscheme Tomorrow-Night
-" colorscheme Tomorrow
+colorscheme wombat256
 ```
+
+在 [这里](https://github.com/flazz/vim-colorschemes/tree/master/colors) 选择一个自己想要的即可。
