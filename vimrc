@@ -13,7 +13,7 @@ set completeopt-=preview
 "--------
 " Vim UI
 "--------
-colorscheme distinguished
+colorscheme wombat256
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -66,10 +66,14 @@ autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=
 
 " syntax support
 autocmd Syntax javascript set syntax=jquery   " JQuery syntax support
+
 " js
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+
+" python
+let g:syntastic_python_python_exec = 'python'
 
 "-----------------
 " Plugin settings
