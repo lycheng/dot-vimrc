@@ -33,6 +33,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 "--------------
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'humiaozuzu/TabBar'
 Plugin 'majutsushi/tagbar'

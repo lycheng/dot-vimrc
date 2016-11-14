@@ -121,21 +121,25 @@ let g:airline#extensions#whitespace#symbol = '!'
 let NERDChristmasTree=0
 let NERDTreeWinSize=25
 let NERDTreeChDirMode=2
-let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
+let NERDTreeAutoCenter=1
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$', '__pycache__']
 let NERDTreeShowBookmarks=1
 let NERDTreeWinPos="left"
 
 let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "~",
-    \ "Staged"    : "+",
-    \ "Untracked" : "*",
-    \ "Renamed"   : ">",
-    \ "Unmerged"  : "=",
-    \ "Deleted"   : "x",
-    \ "Dirty"     : "*",
-    \ "Clean"     : "~",
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
     \ "Unknown"   : "?"
     \ }
+
+" let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_autofind=1
 
 " nerdcommenter
 let NERDSpaceDelims=1
@@ -169,12 +173,13 @@ set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_S
 let g:ctrlp_custom_ignore = 'node_modules\|\.git$\|\.hg$\|\.svn$'
 
 " Keybindings for plugin toggle
-nmap <F6> :TagbarToggle<cr>
-nmap <F5> :NERDTreeToggle<cr>
+
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 nmap <F4> :IndentGuidesToggle<cr>
-au BufRead *.py map <buffer> <F8> :w<CR>:!/usr/bin/env python2 % <CR>
+nmap <F5> :NERDTreeTabsToggle<cr>
+nmap <F6> :TagbarToggle<cr>
+au BufRead *.py map <buffer> <F8> :w<CR>:!/usr/bin/env python % <CR>
 set pastetoggle=<F9>
 nmap  <D-/> :
 nnoremap <leader>a :Ag 
