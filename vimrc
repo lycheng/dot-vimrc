@@ -74,6 +74,7 @@ let g:html_indent_style1 = "inc"
 
 " python
 let g:syntastic_python_python_exec = 'python'
+let python_highlight_all=1
 
 "-----------------
 " Plugin settings
@@ -167,6 +168,10 @@ let g:ycm_filetype_blacklist = {
 
 highlight Pmenu ctermfg=white ctermbg=red
 highlight PmenuSel ctermfg=white ctermbg=blue
+
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux
