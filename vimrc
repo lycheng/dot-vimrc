@@ -65,8 +65,6 @@ autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 tex
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 
 " syntax support
-autocmd Syntax javascript set syntax=jquery   " JQuery syntax support
-
 
 "-----------------
 " Plugin settings
@@ -161,6 +159,9 @@ let g:ycm_filetype_blacklist = {
 highlight Pmenu ctermfg=white ctermbg=red
 highlight PmenuSel ctermfg=white ctermbg=blue
 
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux
 let g:ctrlp_custom_ignore = 'node_modules\|\.git$\|\.hg$\|\.svn$'
@@ -245,6 +246,7 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 " javascript
+autocmd Syntax javascript set syntax=jquery   " JQuery syntax support
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"

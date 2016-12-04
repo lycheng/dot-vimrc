@@ -13,19 +13,21 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 ### 编辑
 
 * `9 + {w, b, e}` -> 快速移动
-* `<leader> + c + space` -> 代码注释
 * `F9` -> 切换 复制 / 普通模式
-
+* `:vs` -> 垂直分隔再打开当前的文件, 可用 ctrlp 进行切换文件
 
 ### IDE Feature
 
 * `Alt` + `1~9` -> 多个 buffers 的跳转
-* `Ctrl` + `h/j/k/l` -> 多个 window 间的跳转
+* `F3` -> Python PEP8 格式化
+* `F4` -> 切换缩进显示
 * `F5` -> 打开目录树
 * `F6` -> 打开 tarbar
 * `Ctrl` + `p` -> 打开 ctrlp
+* `Ctrl` + `h/j/k/l` -> 多个 window 间的跳转
 * `<leader> + a` -> 使用 ag 进行在当前目录下进行查找关键字
-* `:vs` -> 垂直分隔再打开当前的文件, 可用 ctrlp 进行切换文件
+* `<leader> + g` -> 跳转到该光标选中的函数（变量）定义
+* `<leader> + c + space` -> 注释当前选中的代码
 
 安装
 ---
