@@ -67,13 +67,6 @@ autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=
 " syntax support
 autocmd Syntax javascript set syntax=jquery   " JQuery syntax support
 
-" js
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
-
-" python
-let g:syntastic_python_checkers = ['python']
 
 "-----------------
 " Plugin settings
@@ -176,6 +169,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|\.git$\|\.hg$\|\.svn$'
 
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
+nmap <F3> :Yapf<cr>
 nmap <F4> :IndentGuidesToggle<cr>
 nmap <F5> :NERDTreeTabsToggle<cr>
 nmap <F6> :TagbarToggle<cr>
@@ -249,3 +243,12 @@ let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+
+" javascript
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+
+" python
+let g:syntastic_python_checkers = ['python']
+let g:yapf_style = "pep8"

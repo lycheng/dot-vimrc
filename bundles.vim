@@ -64,6 +64,7 @@ Plugin 'mhinz/vim-hugefile'
 Plugin 'lepture/vim-jinja'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'nvie/vim-flake8'
+Plugin 'mindriot101/vim-yapf'
 
 "------- web frontend ----------
 Plugin 'othree/html5.vim'
