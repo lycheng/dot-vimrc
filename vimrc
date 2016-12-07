@@ -13,7 +13,7 @@ set completeopt-=preview
 "--------
 " Vim UI
 "--------
-colorscheme wombat256
+colorscheme xemacs
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -177,7 +177,7 @@ nmap <F6> :TagbarToggle<cr>
 au BufRead *.py map <buffer> <F8> :w<CR>:!/usr/bin/env python % <CR>
 set pastetoggle=<F9>
 nmap  <D-/> :
-nnoremap <leader>a :Ag 
+nnoremap <leader>a :Ag <cword>
 nnoremap <leader>v V`]
 
 "------------------
