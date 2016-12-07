@@ -13,7 +13,7 @@ set completeopt-=preview
 "--------
 " Vim UI
 "--------
-colorscheme xemacs
+colorscheme badwolf
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
