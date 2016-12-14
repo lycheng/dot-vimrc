@@ -10,14 +10,15 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 快捷键
 ---
 
-### 编辑
+### 基本功能
 
 * `9 + {w, b, e}` -> 快速移动
 * `F9` -> 切换 复制 / 普通模式
-* `:vs` -> 垂直分隔再打开当前的文件, 可用 ctrlp 进行切换文件
+* `Ctrl` + `c` -> 选中相应的行之后复制到系统黏贴板，需要 xclip 支持
 
 ### IDE Feature
 
+* `:vs` -> 垂直分隔再打开当前的文件, 可用 ctrlp 进行切换文件
 * `Alt` + `1~9` -> 多个 buffers 的跳转
 * `F3` -> Python PEP8 格式化
 * `F4` -> 切换缩进显示
@@ -25,7 +26,7 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 * `F6` -> 打开 tarbar
 * `Ctrl` + `p` -> 打开 ctrlp
 * `Ctrl` + `h/j/k/l` -> 多个 window 间的跳转
-* `<leader> + a` -> 使用 ag 进行在当前目录下进行查找关键字
+* `<leader> + a` -> 使用 [Ag](https://github.com/ggreer/the_silver_searcher) 进行在当前目录下进行查找关键字
 * `<leader> + g` -> 跳转到该光标选中的函数（变量）定义
 * `<leader> + c + space` -> 注释当前选中的代码
 
@@ -35,16 +36,22 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 ### 插件管理
 
 ```bash
-
 # 管理 vim 插件的插件
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # 安装插件
 vim +PluginInstall +qall
+
+# vim 下面
+# 更新插件
+:PluginUpdate
+
+# 安装插件
+:PluginInstall
 ```
 
 
-### 安装 YCM
+### YCM 编译安装
 
 代码补全用的是 [YCM](https://github.com/Valloric/YouCompleteMe)
 
