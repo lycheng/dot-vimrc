@@ -18,6 +18,8 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 
 ### IDE Feature
 
+`<leader>` 键为默认的 `\`
+
 * `:vs` -> 垂直分隔再打开当前的文件, 可用 ctrlp 进行切换文件
 * `Alt` + `1~9` -> 多个 buffers 的跳转
 * `F3` -> Python PEP8 格式化
