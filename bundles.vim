@@ -43,6 +43,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'kien/rainbow_parentheses.vim'
 
 "--------------
 " Git plugins
@@ -82,6 +83,9 @@ Plugin 'tpope/vim-markdown'
 
 "------- Golang ----------
 Plugin 'fatih/vim-go'
+
+"------- lisp -------
+Plugin 'kovisoft/slimv'
 
 "--------------
 " Color Schemes
