@@ -68,27 +68,50 @@ autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=
 "-----------------
 " Plugin settings
 "-----------------
-" Rainbow parentheses for Lisp and variants
-let g:rbpt_colorpairs = [
-    \ ['brown',       'RoyalBlue3'],
-    \ ['Darkblue',    'SeaGreen3'],
-    \ ['darkgray',    'DarkOrchid3'],
-    \ ['darkgreen',   'firebrick3'],
-    \ ['darkcyan',    'RoyalBlue3'],
-    \ ['darkred',     'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['brown',       'firebrick3'],
-    \ ['gray',        'RoyalBlue3'],
-    \ ['black',       'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['darkred',     'DarkOrchid3'],
-    \ ['red',         'firebrick3'],
-    \ ]
-let g:rbpt_max = 16
-autocmd Syntax lisp,scheme,clojure,racket RainbowParenthesesToggle
+" Rainbow parentheses settings
+let g:rainbow_active = 1
+let g:rainbow_conf = {
+    \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+    \   'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+    \   'operators': '_,_',
+    \   'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+    \   'separately': {
+    \       '*': {},
+    \       'tex': {
+    \           'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/'],
+    \       },
+    \       'lisp': {
+    \           'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'],
+    \       },
+    \       'vim': {
+    \           'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/', 'start=/{/ end=/}/ fold', 'start=/(/ end=/)/ containedin=vimFuncBody', 'start=/\[/ end=/\]/ containedin=vimFuncBody', 'start=/{/ end=/}/ fold containedin=vimFuncBody'],
+    \       },
+    \       'html': {
+    \           'parentheses': ['start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ >])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end=#</\z1># fold'],
+    \       },
+    \       'css': 0,
+    \   }
+    \}
+" let g:rbpt_colorpairs = [
+    " \ ['brown',       'RoyalBlue3'],
+    " \ ['Darkblue',    'SeaGreen3'],
+    " \ ['darkgray',    'DarkOrchid3'],
+    " \ ['darkgreen',   'firebrick3'],
+    " \ ['darkcyan',    'RoyalBlue3'],
+    " \ ['darkred',     'SeaGreen3'],
+    " \ ['darkmagenta', 'DarkOrchid3'],
+    " \ ['brown',       'firebrick3'],
+    " \ ['gray',        'RoyalBlue3'],
+    " \ ['black',       'SeaGreen3'],
+    " \ ['darkmagenta', 'DarkOrchid3'],
+    " \ ['Darkblue',    'firebrick3'],
+    " \ ['darkgreen',   'RoyalBlue3'],
+    " \ ['darkcyan',    'SeaGreen3'],
+    " \ ['darkred',     'DarkOrchid3'],
+    " \ ['red',         'firebrick3'],
+    " \ ]
+" let g:rbpt_max = 16
+" let g:rbpt_loadcmd_toggle = 0
 
 " easy-motion
 let g:EasyMotion_leader_key = '9'
@@ -266,3 +289,6 @@ let g:html_indent_style1 = "inc"
 
 " python
 let g:syntastic_python_checkers = ['flake8']
+
+" racket
+let g:syntastic_enable_racket_racket_checker = 1
