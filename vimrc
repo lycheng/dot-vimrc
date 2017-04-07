@@ -113,6 +113,9 @@ let g:rainbow_conf = {
 " let g:rbpt_max = 16
 " let g:rbpt_loadcmd_toggle = 0
 
+" indentLine
+let g:indentLine_color_term = 239
+
 " easy-motion
 let g:EasyMotion_leader_key = '9'
 

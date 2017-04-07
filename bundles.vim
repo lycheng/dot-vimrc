@@ -44,6 +44,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'luochen1990/rainbow'
+Plugin 'Yggdroot/indentLine'
 
 "--------------
 " Git plugins
