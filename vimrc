@@ -134,13 +134,13 @@ let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#symbol = '!'
 
 " Nerd Tree
-let NERDChristmasTree=0
-let NERDTreeWinSize=25
-let NERDTreeChDirMode=2
-let NERDTreeAutoCenter=1
+let NERDTreeWinSize=24
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$', '__pycache__']
-let NERDTreeShowBookmarks=1
 let NERDTreeWinPos="left"
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeQuitOnOpen = 1
 
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
@@ -153,9 +153,6 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Clean"     : "✔︎",
     \ "Unknown"   : "?"
     \ }
-
-" let g:nerdtree_tabs_open_on_console_startup=1
-let g:nerdtree_tabs_autofind=1
 
 " nerdcommenter
 let NERDSpaceDelims=1
@@ -196,7 +193,7 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 nmap <F3> :Yapf<cr>
 nmap <F4> :IndentGuidesToggle<cr>
-nmap <F5> :NERDTreeTabsToggle<cr>
+nmap <F5> :NERDTreeToggle<cr>
 nmap <F6> :TagbarToggle<cr>
 au BufRead *.py map <buffer> <F8> :w<CR>:!/usr/bin/env python % <CR>
 set pastetoggle=<F9>
