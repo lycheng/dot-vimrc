@@ -140,7 +140,6 @@ let NERDTreeWinPos="left"
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
-let NERDTreeQuitOnOpen = 1
 
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
@@ -182,7 +181,15 @@ highlight Pmenu ctermfg=white ctermbg=red
 highlight PmenuSel ctermfg=white ctermbg=blue
 
 let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_python_binary_path="python"
+map <leader>g :YcmCompleter GoTo<CR>
+map <leader>f :YcmCompleter GoToReferences<CR>
+
+augroup load_ycm
+  autocmd!
+  autocmd CursorHold, CursorHoldI * :packadd YouCompleteMe
+                                \ | autocmd! load_ycm
+augroup END
 
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux
