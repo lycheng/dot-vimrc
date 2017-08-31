@@ -196,13 +196,10 @@ set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_S
 let g:ctrlp_custom_ignore = 'node_modules\|\.git$\|\.hg$\|\.svn$'
 
 " Keybindings for plugin toggle
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
 nmap <F3> :Yapf<cr>
 nmap <F4> :IndentGuidesToggle<cr>
 nmap <F5> :NERDTreeToggle<cr>
 nmap <F6> :TagbarToggle<cr>
-au BufRead *.py map <buffer> <F8> :w<CR>:!/usr/bin/env python % <CR>
 set pastetoggle=<F9>
 nmap  <D-/> :
 nnoremap <leader>a :Ag <cword>
