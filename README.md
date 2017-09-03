@@ -78,3 +78,20 @@ colorscheme wombat256
 ```
 
 在 [这里](https://github.com/flazz/vim-colorschemes/tree/master/colors) 选择一个自己想要的即可。
+
+备注
+---
+
+### 关于 Python 语法检查
+
+syntastic 中使用的 flake8 进行语法检查，使用的是不加路径的 python。
+
+```
+let g:syntastic_python_flake8_exec = 'python'
+```
+
+这是目前能想到的比较好解决 Python2/3 的问题的方法，如果实在 virtualenv 中有使用，则需要在当前的虚拟环境安装一个 flake8
+
+```
+pip install flake8
+```
