@@ -292,7 +292,6 @@ let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
 " python
-let g:syntastic_python_flake8_exec = 'python'
 let g:syntastic_python_checkers = ['flake8']
 
 " racket
