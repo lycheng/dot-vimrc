@@ -13,7 +13,9 @@ set completeopt-=preview
 "--------
 " Vim UI
 "--------
-color dracula
+let g:rehash256 = 1
+let g:molokai_original = 1
+colorscheme molokai
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
