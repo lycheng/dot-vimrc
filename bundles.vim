@@ -79,7 +79,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'mattn/emmet-vim'
 
 "------- markup language -------
-Plugin 'tpope/vim-markdown'
+" Plugin 'tpope/vim-markdown'
 
 "------- Golang ----------
 Plugin 'fatih/vim-go'
