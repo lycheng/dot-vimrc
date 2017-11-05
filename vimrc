@@ -119,7 +119,17 @@ let g:rainbow_conf = {
 let g:indentLine_color_term = 239
 
 " easy-motion
-let g:EasyMotion_leader_key = '9'
+map  <Leader>m <Plug>(easymotion-bd-f)
+nmap <Leader>m <Plug>(easymotion-overwin-f)
+
+nmap s <Plug>(easymotion-overwin-f2)
+
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)))
 
 " Tagbar
 let g:tagbar_right=1
@@ -295,6 +305,7 @@ let g:html_indent_style1 = "inc"
 
 " python
 let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_flake8_post_args='--ignore=E501'
 
 " racket
 let g:syntastic_enable_racket_racket_checker = 1
