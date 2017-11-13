@@ -194,6 +194,8 @@ highlight PmenuSel ctermfg=white ctermbg=blue
 
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_python_binary_path="python"
+let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+
 map <leader>g :YcmCompleter GoTo<CR>
 map <leader>f :YcmCompleter GoToReferences<CR>
 
