@@ -119,17 +119,7 @@ let g:rainbow_conf = {
 let g:indentLine_color_term = 239
 
 " easy-motion
-map  <Leader>m <Plug>(easymotion-bd-f)
-nmap <Leader>m <Plug>(easymotion-overwin-f)
-
 nmap s <Plug>(easymotion-overwin-f2)
-
-map <Leader>L <Plug>(easymotion-bd-jk)
-nmap <Leader>L <Plug>(easymotion-overwin-line)
-
-" Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)))
 
 " Tagbar
 let g:tagbar_right=1

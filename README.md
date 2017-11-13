@@ -12,7 +12,7 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 
 ### 基本功能
 
-* `9 + {w, b, e}` -> 快速移动
+* `s` -> 输入 2 个字母进行快速跳转
 * `F9` -> 切换 复制 / 普通模式
 * `Ctrl` + `c` -> 选中相应的行之后复制到系统黏贴板，需要 xclip 支持
 
