@@ -94,26 +94,6 @@ let g:rainbow_conf = {
     \       'css': 0,
     \   }
     \}
-" let g:rbpt_colorpairs = [
-    " \ ['brown',       'RoyalBlue3'],
-    " \ ['Darkblue',    'SeaGreen3'],
-    " \ ['darkgray',    'DarkOrchid3'],
-    " \ ['darkgreen',   'firebrick3'],
-    " \ ['darkcyan',    'RoyalBlue3'],
-    " \ ['darkred',     'SeaGreen3'],
-    " \ ['darkmagenta', 'DarkOrchid3'],
-    " \ ['brown',       'firebrick3'],
-    " \ ['gray',        'RoyalBlue3'],
-    " \ ['black',       'SeaGreen3'],
-    " \ ['darkmagenta', 'DarkOrchid3'],
-    " \ ['Darkblue',    'firebrick3'],
-    " \ ['darkgreen',   'RoyalBlue3'],
-    " \ ['darkcyan',    'SeaGreen3'],
-    " \ ['darkred',     'DarkOrchid3'],
-    " \ ['red',         'firebrick3'],
-    " \ ]
-" let g:rbpt_max = 16
-" let g:rbpt_loadcmd_toggle = 0
 
 " indentLine
 let g:indentLine_color_term = 239
@@ -155,9 +135,22 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
+" https://github.com/scrooloose/nerdtree/issues/480#issuecomment-139815558
+function NERDTreeToggleInCurDir()
+    " If NERDTree is open in the current buffer
+    if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
+        exe ":NERDTreeClose"
+    else
+        if (expand("%:t") != '')
+           exe ":NERDTreeFind"
+        else
+           exe ":NERDTreeToggle"
+        endif
+    endif
+endfunction
+
 " nerdcommenter
 let NERDSpaceDelims=1
-" nmap <D-/> :NERDComToggleComment<cr>
 let NERDCompactSexyComs=1
 
 " the_silver_searcher
@@ -202,7 +195,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|\.git$\|\.hg$\|\.svn$'
 " Keybindings for plugin toggle
 nmap <F3> :Yapf<cr>
 nmap <F4> :IndentGuidesToggle<cr>
-nmap <F5> :NERDTreeToggle<cr>
+nmap <F5> :call NERDTreeToggleInCurDir()<cr>
 nmap <F6> :TagbarToggle<cr>
 set pastetoggle=<F9>
 nmap  <D-/> :
