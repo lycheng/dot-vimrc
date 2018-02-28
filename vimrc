@@ -202,6 +202,14 @@ nmap  <D-/> :
 nnoremap <leader>a :Ag <cword>
 nnoremap <leader>v V`]
 
+" vim-json
+" https://github.com/elzr/vim-json
+let g:vim_json_syntax_conceal = 0
+
+" vim-markdown
+" https://github.com/plasticboy/vim-markdown
+let g:vim_markdown_conceal = 0
+
 "------------------
 " Useful Functions
 "------------------

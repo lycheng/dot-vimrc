@@ -68,18 +68,12 @@ Plugin 'nvie/vim-flake8'
 Plugin 'mindriot101/vim-yapf'
 
 "------- web frontend ----------
-Plugin 'othree/html5.vim'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'nono/jquery.vim'
-Plugin 'groenewege/vim-less'
-Plugin 'wavded/vim-stylus'
-Plugin 'nono/vim-handlebars'
-Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
+Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'mattn/emmet-vim'
+Plugin 'elzr/vim-json'
 
 "------- markup language -------
-" Plugin 'tpope/vim-markdown'
+Plugin 'plasticboy/vim-markdown'
 
 "------- Golang ----------
 Plugin 'fatih/vim-go'
