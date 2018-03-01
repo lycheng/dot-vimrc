@@ -74,6 +74,7 @@ Plugin 'elzr/vim-json'
 
 "------- markup language -------
 Plugin 'plasticboy/vim-markdown'
+Plugin 'jszakmeister/markdown2ctags'
 
 "------- Golang ----------
 Plugin 'fatih/vim-go'

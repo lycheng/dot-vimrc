@@ -26,7 +26,7 @@ F 区
 * `F6` -> 打开 tarbar
 * `F9` -> pastetoggle
 
-`<leader>` 键为默认的 `\`
+`<leader>` 键为默认的 `\\`
 
 * `:vs` -> 垂直分隔再打开当前的文件, 可用 ctrlp 进行切换文件
 * `Alt` + `1~9` -> 多个 buffers 的跳转
