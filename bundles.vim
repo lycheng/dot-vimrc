@@ -37,13 +37,13 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'humiaozuzu/TabBar'
 Plugin 'majutsushi/tagbar'
 Plugin 'rking/ag.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'luochen1990/rainbow'
 Plugin 'Yggdroot/indentLine'
+Plugin 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
 
 "--------------
 " Git plugins

@@ -188,9 +188,13 @@ augroup load_ycm
                                 \ | autocmd! load_ycm
 augroup END
 
-" ctrlp
-set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux
-let g:ctrlp_custom_ignore = 'node_modules\|\.git$\|\.hg$\|\.svn$'
+" LeaderF
+let g:Lf_ShortcutF = '<C-P>'
+let g:Lf_DefaultMode  = 'FullPath'
+let g:Lf_WildIgnore = {
+            \ 'dir': ['node_modules','.git'],
+            \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
+            \}
 
 " Keybindings for plugin toggle
 nmap <F3> :Yapf<cr>
