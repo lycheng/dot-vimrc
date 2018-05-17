@@ -1,5 +1,5 @@
 lycheng's vim config
----
+===
 
 forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 
@@ -82,15 +82,13 @@ colorscheme wombat256
 备注
 ---
 
-### 关于 Python 语法检查
+### 语法检查
 
-syntastic 中使用的 flake8 进行语法检查，使用的是不加路径的 python。
+使用 [ale](https://github.com/w0rp/ale) 替换 [syntastic](https://github.com/vim-syntastic/syntastic)
 
-```
-let g:syntastic_python_flake8_exec = 'python'
-```
+#### Python
 
-这是目前能想到的比较好解决 Python2/3 的问题的方法，如果实在 virtualenv 中有使用，则需要在当前的虚拟环境安装一个 flake8
+ale 中使用 flake8 进行检查，如果是虚拟环境下的则需要安装一个 flake8 才行，否则 Python2 / Python3 的版本会有问题
 
 ```
 pip install flake8

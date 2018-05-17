@@ -114,6 +114,7 @@ let g:airline_powerline_fonts = 1
 
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#symbol = '!'
+let g:airline#extensions#ale#enabled = 1
 
 " Nerd Tree
 let NERDTreeWinSize=24
@@ -274,15 +275,21 @@ nnoremap ; :
 :command Qa qa
 :command QA qa
 
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 1
+" ale
+let g:ale_sign_error = 'E'
+let g:ale_sign_warning = 'W'
+let g:ale_completion_enabled = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_swift_swiftlint_use_defaults = 1
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+let g:ale_lint_delay = 200
+let g:ale_linters = {
+            \ 'python': ['flake8'],
+            \ 'go': ['golint', 'govet', 'errcheck']
+            \}
 
 "-------------
 " languages spec
@@ -308,19 +315,8 @@ let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
-
-let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
-let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
-
-" javascript
-autocmd Syntax javascript set syntax=jquery   " JQuery syntax support
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
+let g:go_auto_type_info = 1
 
 " python
-let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_python_flake8_post_args='--ignore=E501,E402'
-
-" racket
-let g:syntastic_enable_racket_racket_checker = 1
+let g:ale_python_flake8_executable = 'flake8'
+let g:ale_python_flake8_args = '--ignore=E501,E402'
