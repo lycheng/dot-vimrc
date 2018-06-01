@@ -45,7 +45,7 @@ set title                                                         " show file in
 set laststatus=2                                                  " use 2 lines for the status bar
 set matchtime=2                                                   " show matching bracket for 0.2 seconds
 set matchpairs+=<:>                                               " specially for html
-" set relativenumber
+set re=1
 
 " Default Indentation
 set autoindent
@@ -103,7 +103,7 @@ nmap s <Plug>(easymotion-overwin-f2)
 
 " Tagbar
 let g:tagbar_right=1
-let g:tagbar_width=30
+let g:tagbar_width=36
 let g:tagbar_autofocus=1
 let g:tagbar_sort=0
 let g:tagbar_compact=1
@@ -117,7 +117,7 @@ let g:airline#extensions#whitespace#symbol = '!'
 let g:airline#extensions#ale#enabled = 1
 
 " Nerd Tree
-let NERDTreeWinSize=24
+let NERDTreeWinSize=30
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$', '__pycache__']
 let NERDTreeWinPos="left"
 let NERDTreeMinimalUI = 1
@@ -204,7 +204,7 @@ nmap <F5> :call NERDTreeToggleInCurDir()<cr>
 nmap <F6> :TagbarToggle<cr>
 set pastetoggle=<F9>
 nmap  <D-/> :
-nnoremap <leader>a :Ag <cword>
+nnoremap <leader>a :Ack! <cword>
 nnoremap <leader>v V`]
 
 " vim-json

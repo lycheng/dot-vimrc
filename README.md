@@ -32,7 +32,7 @@ F 区
 * `Alt` + `1~9` -> 多个 buffers 的跳转
 * `Ctrl` + `p` -> 打开 [LeaderF](https://github.com/Yggdroot/LeaderF)
 * `Ctrl` + `h/j/k/l` -> 多个 window 间的跳转
-* `<leader> + a` -> 使用 [Ag](https://github.com/ggreer/the_silver_searcher) 进行在当前目录下进行查找关键字
+* `<leader> + a` -> 使用 [ack](https://beyondgrep.com/install/) 进行在当前目录下进行查找关键字
 * `<leader> + g` -> 跳转到当前符号的定义或声明，YCM [GoTo](https://github.com/Valloric/YouCompleteMe#the-goto-subcommand)
 * `<leader> + f` -> 列出当前符号的引用（只适用于 js, py, ts），YCM [GoToReferences](https://github.com/Valloric/YouCompleteMe#the-gotoreferences-subcommand)
 * `<leader> + c + space` -> 注释当前选中的代码
