@@ -37,7 +37,6 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'humiaozuzu/TabBar'
 Plugin 'majutsushi/tagbar'
 Plugin 'mileszs/ack.vim'
-" Plugin 'rking/ag.vim'
 Plugin 'w0rp/ale'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-airline/vim-airline'
@@ -50,6 +49,7 @@ Plugin 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
 " Git plugins
 "--------------
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
 Plugin 'airblade/vim-gitgutter'
 
 "-------------

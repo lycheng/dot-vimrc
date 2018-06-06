@@ -181,6 +181,7 @@ let g:ycm_python_binary_path="python"
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 
 map <leader>g :YcmCompleter GoTo<CR>
+map <leader>G :Gbrowse<CR>
 map <leader>f :YcmCompleter GoToReferences<CR>
 
 augroup load_ycm
@@ -317,4 +318,12 @@ let g:go_auto_type_info = 1
 
 " python
 let g:ale_python_flake8_executable = 'flake8'
-let g:ale_python_flake8_args = '--ignore=E501,E402'
+
+" E501 line too long
+" E402 Module level import not at top of file
+" E711 comparison to None should be 'if cond is None:'
+" E712 comparison to False should be 'if cond is False:' or 'if not cond:'
+" E722 do not use bare except
+let g:ale_python_flake8_args = '--ignore=E501,E402,E711,E712,E722'
+
+

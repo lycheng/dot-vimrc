@@ -34,6 +34,7 @@ F 区
 * `Ctrl` + `h/j/k/l` -> 多个 window 间的跳转
 * `<leader> + a` -> 使用 [ack](https://beyondgrep.com/install/) 进行在当前目录下进行查找关键字
 * `<leader> + g` -> 跳转到当前符号的定义或声明，YCM [GoTo](https://github.com/Valloric/YouCompleteMe#the-goto-subcommand)
+* `<leader> + G` -> 跳转到当前文件的 github / bitbucket / ... 链接，如果选了某行则调到那一行
 * `<leader> + f` -> 列出当前符号的引用（只适用于 js, py, ts），YCM [GoToReferences](https://github.com/Valloric/YouCompleteMe#the-gotoreferences-subcommand)
 * `<leader> + c + space` -> 注释当前选中的代码
 
