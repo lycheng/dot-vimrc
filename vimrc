@@ -117,9 +117,9 @@ let g:tagbar_compact=1
 " airline
 let g:airline_theme="bubblegum"
 let g:airline_powerline_fonts = 1
-" let g:airline#extensions#whitespace#enabled = 0
-" let g:airline#extensions#whitespace#symbol = '!'
-" let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#whitespace#symbol = '!'
+let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
@@ -220,6 +220,8 @@ set pastetoggle=<F9>
 nmap  <D-/> :
 nnoremap <leader>a :Ack! <cword>
 nnoremap <leader>v V`]
+nnoremap <leader>t :LeaderfBufTag<cr>
+nnoremap <leader>T :LeaderfBufTagAll<cr>
 
 " vim-json
 " https://github.com/elzr/vim-json

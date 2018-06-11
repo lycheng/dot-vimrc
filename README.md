@@ -37,6 +37,9 @@ F 区
 * `<leader> + G` -> 跳转到当前文件的 github / bitbucket / ... 链接，如果选了某行则调到那一行
 * `<leader> + f` -> 列出当前符号的引用（只适用于 js, py, ts），YCM [GoToReferences](https://github.com/Valloric/YouCompleteMe#the-gotoreferences-subcommand)
 * `<leader> + c + space` -> 注释当前选中的代码
+* `<leader> + b` -> 列出当前打开的文件列表
+* `<leader> + t` -> 列出当前文件的 symbol 列表
+* `<leader> + T` -> 列出当前打开的所有文件的 symbol 列表
 
 安装
 ---
