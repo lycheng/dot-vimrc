@@ -13,22 +13,29 @@ set completeopt-=preview
 "--------
 " Vim UI
 "--------
-let g:rehash256 = 1
-let g:molokai_original = 1
-colorscheme molokai
+set background=dark
+
+" gruvbox
+" https://github.com/morhetz/gruvbox/wiki/Terminal-specific
+let g:gruvbox_contrast_dark='soft'
+let g:gruvbox_improved_warnings=1
+colorscheme gruvbox
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
+autocmd Colorscheme * highlight FoldColumn guifg=bg guibg=bg
+
+"--------
+" Common
+"--------
 
 " search
 set incsearch
 set ignorecase
 set smartcase
 set hlsearch
-" set foldcolumn=4
-autocmd Colorscheme * highlight FoldColumn guifg=bg guibg=bg
 
 " editor settings
 set history=1000
@@ -56,6 +63,7 @@ set shiftwidth=4    " indent width
 set smarttab
 set expandtab       " expand tab to space
 
+" syntax support
 autocmd FileType php setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
@@ -64,8 +72,6 @@ autocmd FileType go setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 autocmd FileType html,htmldjango,xhtml,haml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
 autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
-
-" syntax support
 
 "-----------------
 " Plugin settings
@@ -109,12 +115,19 @@ let g:tagbar_sort=0
 let g:tagbar_compact=1
 
 " airline
-let g:airline_theme="wombat"
+let g:airline_theme="bubblegum"
 let g:airline_powerline_fonts = 1
-
-let g:airline#extensions#whitespace#enabled = 0
-let g:airline#extensions#whitespace#symbol = '!'
-let g:airline#extensions#ale#enabled = 1
+" let g:airline#extensions#whitespace#enabled = 0
+" let g:airline#extensions#whitespace#symbol = '!'
+" let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline#extensions#tabline#right_sep = ''
+let g:airline#extensions#tabline#right_alt_sep = ''
+let g:airline#extensions#tabline#formatter = 'default'
 
 " Nerd Tree
 let NERDTreeWinSize=30
@@ -324,6 +337,4 @@ let g:ale_python_flake8_executable = 'flake8'
 " E711 comparison to None should be 'if cond is None:'
 " E712 comparison to False should be 'if cond is False:' or 'if not cond:'
 " E722 do not use bare except
-let g:ale_python_flake8_args = '--ignore=E501,E402,E711,E712,E722'
-
-
+let g:ale_python_flake8_options = '--ignore=E501,E402,E711,E712,E722'

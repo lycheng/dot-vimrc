@@ -5,7 +5,7 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 
 更多的文档可见上方的链接。
 
-个人常用于 Python, Golang 的开发
+个人常用于 Python, Golang 的开发，适用于 vim 8.0 以上的版本
 
 快捷键
 ---
@@ -71,16 +71,15 @@ cd ~/.vim/bundle/YouCompleteMe
 主题
 ---
 
-使用 [vim-colorschemes](https://github.com/flazz/vim-colorschemes) 的插件，集成了各种主题
+使用 [gruvbox](https://github.com/morhetz/gruvbox)
 
 ```
-syntax on
-colorscheme wombat256
+let g:gruvbox_contrast_dark='soft'
+let g:gruvbox_improved_warnings=1
+colorscheme gruvbox
 ```
 
-在 [这里](https://github.com/flazz/vim-colorschemes/tree/master/colors) 选择一个自己想要的即可。
-
-备注
+其它
 ---
 
 ### 语法检查

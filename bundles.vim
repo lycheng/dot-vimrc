@@ -87,9 +87,7 @@ Plugin 'wlangstroth/vim-racket'
 "--------------
 " Color Schemes
 "--------------
-Plugin 'flazz/vim-colorschemes'
-Plugin 'dracula/vim'
-Plugin 'fatih/molokai'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()            " required
 filetype plugin indent on     " required!
