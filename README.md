@@ -28,16 +28,18 @@ F 区
 
 `<leader>` 键为默认的 `\\`
 
-* `:vs` -> 垂直分隔再打开当前的文件, 可用 ctrlp 进行切换文件
-* `Alt` + `1~9` -> 多个 buffers 的跳转
-* `Ctrl` + `p` -> 打开 [LeaderF](https://github.com/Yggdroot/LeaderF)
+* `:vs` -> 垂直分隔再打开当前的文件, 可用 `Ctrl + p` 进行切换文件
 * `Ctrl` + `h/j/k/l` -> 多个 window 间的跳转
 * `<leader> + a` -> 使用 [ack](https://beyondgrep.com/install/) 进行在当前目录下进行查找关键字
 * `<leader> + g` -> 跳转到当前符号的定义或声明，YCM [GoTo](https://github.com/Valloric/YouCompleteMe#the-goto-subcommand)
 * `<leader> + G` -> 跳转到当前文件的 github / bitbucket / ... 链接，如果选了某行则调到那一行
 * `<leader> + f` -> 列出当前符号的引用（只适用于 js, py, ts），YCM [GoToReferences](https://github.com/Valloric/YouCompleteMe#the-gotoreferences-subcommand)
 * `<leader> + c + space` -> 注释当前选中的代码
-* `<leader> + b` -> 列出当前打开的文件列表
+
+LeaderF 配置
+
+* `Ctrl` + `p` -> 打开 [LeaderF](https://github.com/Yggdroot/LeaderF) preview the result
+* `<leader> + b` OR `ff` -> 列出当前打开的文件列表
 * `<leader> + t` -> 列出当前文件的 symbol 列表
 * `<leader> + T` -> 列出当前打开的所有文件的 symbol 列表
 

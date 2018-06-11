@@ -220,6 +220,7 @@ set pastetoggle=<F9>
 nmap  <D-/> :
 nnoremap <leader>a :Ack! <cword>
 nnoremap <leader>v V`]
+nnoremap ff :LeaderfBuffer<cr>
 nnoremap <leader>t :LeaderfBufTag<cr>
 nnoremap <leader>T :LeaderfBufTagAll<cr>
 
