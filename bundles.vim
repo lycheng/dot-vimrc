@@ -24,7 +24,6 @@ Plugin 'terryma/vim-multiple-cursors'
 " Fast editing
 "--------------
 Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'godlygeek/tabular'
 Plugin 'nathanaelkane/vim-indent-guides'
 
@@ -43,6 +42,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'luochen1990/rainbow'
 Plugin 'Yggdroot/indentLine'
 Plugin 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
+Plugin 'tpope/vim-commentary'
 
 "--------------
 " Git plugins

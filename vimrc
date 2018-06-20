@@ -163,9 +163,9 @@ function NERDTreeToggleInCurDir()
     endif
 endfunction
 
-" nerdcommenter
-let NERDSpaceDelims=1
-let NERDCompactSexyComs=1
+" tpope/vim-commentary
+autocmd FileType python,shell,coffee set commentstring=#\ %s
+autocmd FileType java,c,cpp set commentstring=//\ %s
 
 " the_silver_searcher
 let g:ag_prg="ag --vimgrep"
