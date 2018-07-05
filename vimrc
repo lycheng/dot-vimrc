@@ -115,7 +115,7 @@ let g:tagbar_sort=0
 let g:tagbar_compact=1
 
 " airline
-let g:airline_theme="bubblegum"
+let g:airline_theme="papercolor"
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#symbol = '!'

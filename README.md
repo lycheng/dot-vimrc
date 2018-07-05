@@ -20,13 +20,13 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 
 F 区
 
-* `F3` -> Python PEP8 格式化
+* `F3` -> Python PEP8 格式化，需要安装 [yapf](https://github.com/google/yapf)
 * `F4` -> 切换缩进显示
 * `F5` -> 打开目录树
 * `F6` -> 打开 tarbar
 * `F9` -> pastetoggle
 
-`<leader>` 键为默认的 `\\`
+`<leader>` 键为默认的 \
 
 * `:vs` -> 垂直分隔再打开当前的文件, 可用 `Ctrl + p` 进行切换文件
 * `Ctrl` + `h/j/k/l` -> 多个 window 间的跳转
@@ -35,6 +35,7 @@ F 区
 * `<leader> + G` -> 跳转到当前文件的 github / bitbucket / ... 链接，如果选了某行则调到那一行
 * `<leader> + f` -> 列出当前符号的引用（只适用于 js, py, ts），YCM [GoToReferences](https://github.com/Valloric/YouCompleteMe#the-gotoreferences-subcommand)
 * `{Visual}gc` -> 注释当前选中的代码
+* `gcc` -> 注释当前行
 
 LeaderF 配置
 
@@ -42,6 +43,16 @@ LeaderF 配置
 * `<leader> + b` OR `ff` -> 列出当前打开的文件列表
 * `<leader> + t` -> 列出当前文件的 symbol 列表
 * `<leader> + T` -> 列出当前打开的所有文件的 symbol 列表
+
+[vim-surround](https://github.com/tpope/vim-surround) 配置，该插件用于修改，删除 surroundings （括号，方括号，引号等）
+
+NORMAL 模式下
+
+* cs(src-symbol)(dst-symbol) -> 更新符号
+* cst(dst-symbol) -> 从 xml / html 的 tag 换成其它的 surrounding
+* ds(src-symbol) -> 删除 surroundings
+
+更多用法可见其文档
 
 安装
 ---

@@ -18,19 +18,10 @@ Plugin 'Valloric/YouCompleteMe'
 " Fast navigation
 "-----------------
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'terryma/vim-multiple-cursors'
-
-"--------------
-" Fast editing
-"--------------
-Plugin 'tpope/vim-surround'
-Plugin 'godlygeek/tabular'
-Plugin 'nathanaelkane/vim-indent-guides'
 
 "--------------
 " IDE features
 "--------------
-Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'majutsushi/tagbar'
@@ -40,9 +31,10 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'luochen1990/rainbow'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
 Plugin 'Yggdroot/indentLine'
 Plugin 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
-Plugin 'tpope/vim-commentary'
 
 "--------------
 " Git plugins
