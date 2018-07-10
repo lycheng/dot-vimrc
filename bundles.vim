@@ -28,9 +28,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'mileszs/ack.vim'
 Plugin 'w0rp/ale'
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'luochen1990/rainbow'
+Plugin 'simnalamburt/vim-mundo'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'Yggdroot/indentLine'
@@ -42,6 +40,7 @@ Plugin 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rhubarb'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'junegunn/gv.vim'
 
 "-------------
 " Other Utils
@@ -74,6 +73,13 @@ Plugin 'fatih/vim-go'
 "------- lisp -------
 Plugin 'kovisoft/slimv'
 Plugin 'wlangstroth/vim-racket'
+
+"-------------
+" Looks good
+"-------------
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'luochen1990/rainbow'
 
 "--------------
 " Color Schemes

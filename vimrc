@@ -211,19 +211,6 @@ let g:Lf_WildIgnore = {
             \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
             \}
 
-" Keybindings for plugin toggle
-nmap <F3> :Yapf<cr>
-nmap <F4> :IndentGuidesToggle<cr>
-nmap <F5> :call NERDTreeToggleInCurDir()<cr>
-nmap <F6> :TagbarToggle<cr>
-set pastetoggle=<F9>
-nmap  <D-/> :
-nnoremap <leader>a :Ack! <cword>
-nnoremap <leader>v V`]
-nnoremap ff :LeaderfBuffer<cr>
-nnoremap <leader>t :LeaderfBufTag<cr>
-nnoremap <leader>T :LeaderfBufTagAll<cr>
-
 " vim-json
 " https://github.com/elzr/vim-json
 let g:vim_json_syntax_conceal = 0
@@ -249,6 +236,38 @@ let g:tagbar_type_markdown = {
     \ 'sort': 0,
 \ }
 
+" ale
+let g:ale_sign_error = 'E'
+let g:ale_sign_warning = 'W'
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_swift_swiftlint_use_defaults = 1
+let g:ale_set_loclist = 0
+let g:ale_lint_delay = 200
+let g:ale_linters = {
+            \ 'python': ['flake8'],
+            \ 'go': ['golint', 'govet', 'errcheck']
+            \}
+
+" mundo
+set undofile
+set undodir=~/.vim/undo
+
+"------------------
+" Keybindings for plugin toggle
+"------------------
+nmap <F4> :MundoToggle<cr>
+nmap <F5> :call NERDTreeToggleInCurDir()<cr>
+nmap <F6> :TagbarToggle<cr>
+nmap <F8> :Yapf<cr>
+set pastetoggle=<F9>
+nmap  <D-/> :
+nnoremap <leader>a :Ack! <cword>
+nnoremap <leader>v V`]
+nnoremap ff :LeaderfBuffer<cr>
+nnoremap <leader>t :LeaderfBufTag<cr>
+nnoremap <leader>T :LeaderfBufTagAll<cr>
 
 "------------------
 " Useful Functions
@@ -292,25 +311,12 @@ nnoremap ; :
 :command Qa qa
 :command QA qa
 
-" ale
-let g:ale_sign_error = 'E'
-let g:ale_sign_warning = 'W'
-let g:ale_echo_msg_error_str = 'E'
-let g:ale_echo_msg_warning_str = 'W'
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-let g:ale_swift_swiftlint_use_defaults = 1
-let g:ale_set_loclist = 0
-let g:ale_lint_delay = 200
-let g:ale_linters = {
-            \ 'python': ['flake8'],
-            \ 'go': ['golint', 'govet', 'errcheck']
-            \}
-
 "-------------
 " languages spec
 "-------------
 
-" golang with vim-go
+" golang
+" with vim-go
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)

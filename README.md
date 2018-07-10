@@ -20,10 +20,10 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 
 F 区
 
-* `F3` -> Python PEP8 格式化，需要安装 [yapf](https://github.com/google/yapf)
-* `F4` -> 切换缩进显示
+* `F4` -> 列出 vim 修改记录 [mundo](https://simnalamburt.github.io/vim-mundo/)
 * `F5` -> 打开目录树
 * `F6` -> 打开 tarbar
+* `F8` -> Python PEP8 格式化，需要安装 [yapf](https://github.com/google/yapf)
 * `F9` -> pastetoggle
 
 `<leader>` 键为默认的 \
@@ -37,9 +37,9 @@ F 区
 * `{Visual}gc` -> 注释当前选中的代码
 * `gcc` -> 注释当前行
 
-LeaderF 配置
+[LeaderF](https://github.com/Yggdroot/LeaderF) 配置
 
-* `Ctrl` + `p` -> 打开 [LeaderF](https://github.com/Yggdroot/LeaderF) preview the result
+* `Ctrl` + `p` -> 当前目录下的文件搜索
 * `<leader> + b` OR `ff` -> 列出当前打开的文件列表
 * `<leader> + t` -> 列出当前文件的 symbol 列表
 * `<leader> + T` -> 列出当前打开的所有文件的 symbol 列表
@@ -51,8 +51,21 @@ NORMAL 模式下
 * cs(src-symbol)(dst-symbol) -> 更新符号
 * cst(dst-symbol) -> 从 xml / html 的 tag 换成其它的 surrounding
 * ds(src-symbol) -> 删除 surroundings
+* ysiw(symbol) -> 当前单词使用添加 surrounding
 
-更多用法可见其文档
+上述的 iw 为 [text object](https://zhuanlan.zhihu.com/p/39261818)，更多用法可自行替换。
+
+[gv.vim](https://github.com/junegunn/gv.vim) 用于查看 git 日志
+
+* :GV -> 查看 commit list
+* :GV! -> 当前文件的修改的 commit list
+
+再按 o 则看到指定 commit 的 diff
+
+mundo 按 `F5` 查看改动记录时
+
+* p -> 查看与当前的差异
+* enter -> 返回那个版本
 
 安装
 ---
