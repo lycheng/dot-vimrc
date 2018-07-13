@@ -309,6 +309,9 @@ nnoremap ; :
 " languages spec
 "-------------
 
+" markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
 " golang
 " with vim-go
 au FileType go nmap <leader>r <Plug>(go-run)
