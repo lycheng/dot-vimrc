@@ -263,6 +263,10 @@ nnoremap ff :LeaderfBuffer<cr>
 nnoremap <leader>t :LeaderfBufTag<cr>
 nnoremap <leader>T :LeaderfBufTagAll<cr>
 
+" vim-mark
+nmap <Leader>M <Plug>MarkToggle
+nmap <Leader>N <Plug>MarkAllClear
+
 "------------------
 " Useful Functions
 "------------------

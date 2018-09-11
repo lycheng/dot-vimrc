@@ -37,12 +37,16 @@ F 区
 * `{Visual}gc` -> 注释当前选中的代码
 * `gcc` -> 注释当前行
 
+---
+
 [LeaderF](https://github.com/Yggdroot/LeaderF) 配置
 
 * `Ctrl` + `p` -> 当前目录下的文件搜索
 * `<leader> + b` OR `ff` -> 列出当前打开的文件列表
 * `<leader> + t` -> 列出当前文件的 symbol 列表
 * `<leader> + T` -> 列出当前打开的所有文件的 symbol 列表
+
+---
 
 [vim-surround](https://github.com/tpope/vim-surround) 配置，该插件用于修改，删除 surroundings （括号，方括号，引号等）
 
@@ -55,6 +59,8 @@ NORMAL 模式下
 
 上述的 iw 为 [text object](https://zhuanlan.zhihu.com/p/39261818)，更多用法可自行替换。
 
+---
+
 [gv.vim](https://github.com/junegunn/gv.vim) 用于查看 git 日志
 
 * :GV -> 查看 commit list
@@ -62,14 +68,25 @@ NORMAL 模式下
 
 再按 o 则看到指定 commit 的 diff
 
+---
+
 mundo 按 `F5` 查看改动记录时
 
 * p -> 查看与当前的差异
 * enter -> 返回那个版本
 
-[vim-mark](https://github.com/inkarkat/vim-mark) 用于搜索并高亮
+---
 
-安装
+[vim-mark](https://github.com/inkarkat/vim-mark) 用于标记（多个）单词，高亮
+
+* <leader>m -> 标记当前光标选中的单词
+* <leader>n -> 取消标记当前光标选中的单词
+* <leader>\* -> 跳到下一个当前的标记
+* <leader>/ -> 跳到下一个标记
+* \* -> 如果光标处于标记了的单词上，则跳到下一个标记
+* <leader>M -> toggle 光标高亮
+* <leader>N -> 取消光标高亮
+
 ---
 
 ### 插件管理
