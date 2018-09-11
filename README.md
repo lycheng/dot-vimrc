@@ -79,13 +79,13 @@ mundo 按 `F5` 查看改动记录时
 
 [vim-mark](https://github.com/inkarkat/vim-mark) 用于标记（多个）单词，高亮
 
-* <leader>m -> 标记当前光标选中的单词
-* <leader>n -> 取消标记当前光标选中的单词
-* <leader>\* -> 跳到下一个当前的标记
-* <leader>/ -> 跳到下一个标记
-* \* -> 如果光标处于标记了的单词上，则跳到下一个标记
-* <leader>M -> toggle 光标高亮
-* <leader>N -> 取消光标高亮
+* `<leader> + m` -> 标记当前光标选中的单词
+* `<leader> + n` -> 取消标记当前光标选中的单词
+* `<leader> + *` -> 跳到下一个当前的标记
+* `<leader> + /` -> 跳到下一个标记
+* `*` -> 如果光标处于标记了的单词上，则跳到下一个标记
+* `<leader> + M` -> toggle 光标高亮
+* `<leader> + N` -> 取消光标高亮
 
 ---
 
