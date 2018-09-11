@@ -89,7 +89,8 @@ mundo 按 `F5` 查看改动记录时
 
 ---
 
-### 插件管理
+插件管理
+---
 
 ```bash
 # 管理 vim 插件的插件
@@ -107,7 +108,8 @@ vim +PluginInstall +qall
 ```
 
 
-### YCM 编译安装
+YCM 编译安装
+---
 
 代码补全用的是 [YCM](https://github.com/Valloric/YouCompleteMe)
 
