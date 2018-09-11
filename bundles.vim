@@ -22,6 +22,8 @@ Plugin 'Lokaltog/vim-easymotion'
 "--------------
 " IDE features
 "--------------
+Plugin 'inkarkat/vim-ingo-library'
+Plugin 'inkarkat/vim-mark'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'majutsushi/tagbar'

@@ -67,6 +67,8 @@ mundo 按 `F5` 查看改动记录时
 * p -> 查看与当前的差异
 * enter -> 返回那个版本
 
+[vim-mark](https://github.com/inkarkat/vim-mark) 用于搜索并高亮
+
 安装
 ---
 
