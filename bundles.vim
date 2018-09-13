@@ -82,6 +82,7 @@ Plugin 'wlangstroth/vim-racket'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'luochen1990/rainbow'
+Plugin 'RRethy/vim-illuminate'
 
 "--------------
 " Color Schemes

@@ -22,8 +22,6 @@ let g:gruvbox_improved_warnings=1
 colorscheme gruvbox
 
 " highlight current line
-au WinLeave * set nocursorline nocursorcolumn
-au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
 autocmd Colorscheme * highlight FoldColumn guifg=bg guibg=bg
 
@@ -247,6 +245,10 @@ let g:ale_linters = {
 " mundo
 set undofile
 set undodir=~/.vim/undo
+
+" RRethy/vim-illuminate
+let g:Illuminate_delay = 200
+hi illuminatedWord cterm=underline gui=underline
 
 "------------------
 " Keybindings for plugin toggle
