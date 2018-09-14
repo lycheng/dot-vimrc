@@ -14,11 +14,6 @@ Plugin 'VundleVim/Vundle.vim'
 "------------------
 Plugin 'Valloric/YouCompleteMe'
 
-"-----------------
-" Fast navigation
-"-----------------
-Plugin 'Lokaltog/vim-easymotion'
-
 "--------------
 " IDE features
 "--------------
@@ -27,7 +22,7 @@ Plugin 'inkarkat/vim-mark'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'majutsushi/tagbar'
-Plugin 'mileszs/ack.vim'
+Plugin 'wsdjeg/FlyGrep.vim'
 Plugin 'w0rp/ale'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'simnalamburt/vim-mundo'

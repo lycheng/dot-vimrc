@@ -102,9 +102,6 @@ let g:rainbow_conf = {
 " indentLine
 let g:indentLine_color_term = 239
 
-" easy-motion
-nmap s <Plug>(easymotion-overwin-f2)
-
 " Tagbar
 let g:tagbar_right=1
 let g:tagbar_width=36
@@ -121,7 +118,7 @@ let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
-" Nerd Tree
+" NERDTree
 let NERDTreeWinSize=30
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$', '__pycache__']
 let NERDTreeWinPos="left"
@@ -185,10 +182,6 @@ let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_python_binary_path="python"
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 
-map <leader>g :YcmCompleter GoTo<CR>
-map <leader>G :Gbrowse<CR>
-map <leader>f :YcmCompleter GoToReferences<CR>
-
 augroup load_ycm
   autocmd!
   autocmd CursorHold, CursorHoldI * :packadd YouCompleteMe
@@ -208,8 +201,8 @@ let g:Lf_WildIgnore = {
 let g:vim_json_syntax_conceal = 0
 
 " vim-markdown
-" https://github.com/plasticboy/vim-markdown
-let g:vim_markdown_conceal = 0
+" https://github.com/tpope/vim-markdown
+let g:markdown_syntax_conceal = 0
 
 " markdown2ctags
 " Add support for markdown files in tagbar.
@@ -259,7 +252,6 @@ nmap <F6> :TagbarToggle<cr>
 nmap <F8> :Yapf<cr>
 set pastetoggle=<F9>
 nmap  <D-/> :
-nnoremap <leader>a :Ack! <cword>
 nnoremap <leader>v V`]
 nnoremap ff :LeaderfBuffer<cr>
 nnoremap <leader>t :LeaderfBufTag<cr>
@@ -268,6 +260,14 @@ nnoremap <leader>T :LeaderfBufTagAll<cr>
 " vim-mark
 nmap <Leader>M <Plug>MarkToggle
 nmap <Leader>N <Plug>MarkAllClear
+
+" FlyGrep.vim
+nmap <leader>a :FlyGrep <cr>
+
+" YCM
+map <leader>g :YcmCompleter GoTo<CR>
+map <leader>G :Gbrowse<CR>
+map <leader>f :YcmCompleter GoToReferences<CR>
 
 "------------------
 " Useful Functions
@@ -314,9 +314,6 @@ nnoremap ; :
 "-------------
 " languages spec
 "-------------
-
-" markdown
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " golang
 " with vim-go

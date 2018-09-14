@@ -12,7 +12,6 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 
 ### 基本功能
 
-* `s` -> 输入 2 个字母进行快速跳转
 * `F9` -> 切换 复制 / 普通模式
 * `Ctrl` + `c` -> 选中相应的行之后复制到系统黏贴板，需要 xclip 支持
 
@@ -30,7 +29,7 @@ F 区
 
 * `:vs` -> 垂直分隔再打开当前的文件, 可用 `Ctrl + p` 进行切换文件
 * `Ctrl` + `h/j/k/l` -> 多个 window 间的跳转
-* `<leader> + a` -> 使用 [ack](https://beyondgrep.com/install/) 进行在当前目录下进行查找关键字
+* `<leader> + a` -> 使用 [FlyGrep](https://github.com/wsdjeg/FlyGrep.vim) 进行在当前目录下进行查找关键字
 * `<leader> + g` -> 跳转到当前符号的定义或声明，YCM [GoTo](https://github.com/Valloric/YouCompleteMe#the-goto-subcommand)
 * `<leader> + G` -> 跳转到当前文件的 github / bitbucket / ... 链接，如果选了某行则调到那一行
 * `<leader> + f` -> 列出当前符号的引用（只适用于 js, py, ts），YCM [GoToReferences](https://github.com/Valloric/YouCompleteMe#the-gotoreferences-subcommand)
@@ -70,7 +69,7 @@ NORMAL 模式下
 
 ---
 
-mundo 按 `F5` 查看改动记录时
+[mundo](https://github.com/simnalamburt/vim-mundo) 按 `F5` 查看改动记录时
 
 * p -> 查看与当前的差异
 * enter -> 返回那个版本
@@ -86,8 +85,6 @@ mundo 按 `F5` 查看改动记录时
 * `*` -> 如果光标处于标记了的单词上，则跳到下一个标记
 * `<leader> + M` -> toggle 光标高亮
 * `<leader> + N` -> 取消光标高亮
-
----
 
 插件管理
 ---
