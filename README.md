@@ -41,7 +41,7 @@ F 区
 [LeaderF](https://github.com/Yggdroot/LeaderF) 配置
 
 * `Ctrl` + `p` -> 当前目录下的文件搜索
-* `<leader> + b` OR `ff` -> 列出当前打开的文件列表
+* `<leader> + b` OR `Ctrl + E` -> 列出当前打开的文件列表
 * `<leader> + t` -> 列出当前文件的 symbol 列表
 * `<leader> + T` -> 列出当前打开的所有文件的 symbol 列表
 

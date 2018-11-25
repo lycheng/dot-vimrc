@@ -13,10 +13,10 @@ set completeopt-=preview
 "--------
 " Vim UI
 "--------
-set background=dark
 
 " gruvbox
 " https://github.com/morhetz/gruvbox/wiki/Terminal-specific
+set background=dark
 let g:gruvbox_contrast_dark='soft'
 let g:gruvbox_improved_warnings=1
 colorscheme gruvbox
@@ -253,7 +253,7 @@ nmap <F8> :Yapf<cr>
 set pastetoggle=<F9>
 nmap  <D-/> :
 nnoremap <leader>v V`]
-nnoremap ff :LeaderfBuffer<cr>
+nnoremap <C-E> :LeaderfBuffer<cr>
 nnoremap <leader>t :LeaderfBufTag<cr>
 nnoremap <leader>T :LeaderfBufTagAll<cr>
 
