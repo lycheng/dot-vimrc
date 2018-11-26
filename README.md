@@ -10,6 +10,18 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 快捷键
 ---
 
+### Vim Basic
+
+NORMAL 模式下
+
+* `Ctrl + E` -> 保持光标不动，窗口向下移动一行
+* `Ctrl + Y` -> 保持光标不动，窗口向上移动一行
+* `Ctrl + F` -> 下一页
+* `Ctrl + B` -> 上一页
+* `Ctrl + U` -> 上移半屏
+* `Ctrl + D` -> 下移半屏
+
+
 ### 基本功能
 
 * `F9` -> 切换 复制 / 普通模式
@@ -41,7 +53,7 @@ F 区
 [LeaderF](https://github.com/Yggdroot/LeaderF) 配置
 
 * `Ctrl` + `p` -> 当前目录下的文件搜索
-* `<leader> + b` OR `Ctrl + E` -> 列出当前打开的文件列表
+* `ff` -> 列出当前打开的文件列表
 * `<leader> + t` -> 列出当前文件的 symbol 列表
 * `<leader> + T` -> 列出当前打开的所有文件的 symbol 列表
 

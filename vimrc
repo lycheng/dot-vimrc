@@ -253,7 +253,7 @@ nmap <F8> :Yapf<cr>
 set pastetoggle=<F9>
 nmap  <D-/> :
 nnoremap <leader>v V`]
-nnoremap <C-E> :LeaderfBuffer<cr>
+nnoremap ff :LeaderfBuffer<cr>
 nnoremap <leader>t :LeaderfBufTag<cr>
 nnoremap <leader>T :LeaderfBufTagAll<cr>
 
