@@ -5,7 +5,7 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 
 更多的文档可见上方的链接。
 
-个人常用于 Python, Golang 的开发，适用于 vim 8.0 以上的版本
+个人常用于 Python, Golang 的开发，适用于 vim 8.0（需要 +python 或者之和使用 nvim） 以上的版本
 
 快捷键
 ---
@@ -152,3 +152,8 @@ ale 中使用 flake8 进行检查，如果是虚拟环境下的则需要安装�
 ```
 pip install flake8
 ```
+
+CHANGELOG
+---
+
+ - 2018-01-09: 使用 neovim 替代 vim
