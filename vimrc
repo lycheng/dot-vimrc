@@ -76,7 +76,7 @@ autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=
 "-----------------
 
 " SpaceVim config
-let g:spacevim_commandline_prompt = '>>'
+let g:spacevim_commandline_prompt = '>'
 
 " Rainbow parentheses settings
 let g:rainbow_active = 1
@@ -239,10 +239,6 @@ let g:ale_linters = {
             \ 'go': ['golint', 'govet', 'errcheck']
             \}
 
-" mundo
-set undofile
-set undodir=~/.vim/undo
-
 " RRethy/vim-illuminate
 let g:Illuminate_delay = 200
 hi illuminatedWord cterm=underline gui=underline
@@ -250,7 +246,6 @@ hi illuminatedWord cterm=underline gui=underline
 "------------------
 " Keybindings for plugin toggle
 "------------------
-nmap <F4> :MundoToggle<cr>
 nmap <F5> :call NERDTreeToggleInCurDir()<cr>
 nmap <F6> :TagbarToggle<cr>
 nmap <F8> :Yapf<cr>

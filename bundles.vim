@@ -25,9 +25,9 @@ Plugin 'majutsushi/tagbar'
 Plugin 'wsdjeg/FlyGrep.vim'
 Plugin 'w0rp/ale'
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'simnalamburt/vim-mundo'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
+Plugin 'andymass/vim-matchup'
 Plugin 'Yggdroot/indentLine'
 Plugin 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
 

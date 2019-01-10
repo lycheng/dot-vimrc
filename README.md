@@ -31,7 +31,6 @@ NORMAL 模式下
 
 F 区
 
-* `F4` -> 列出 vim 修改记录 [mundo](https://simnalamburt.github.io/vim-mundo/)
 * `F5` -> 打开目录树
 * `F6` -> 打开 tarbar
 * `F8` -> Python PEP8 格式化，需要安装 [yapf](https://github.com/google/yapf)
@@ -78,13 +77,6 @@ NORMAL 模式下
 * :GV! -> 当前文件的修改的 commit list
 
 再按 o 则看到指定 commit 的 diff
-
----
-
-[mundo](https://github.com/simnalamburt/vim-mundo) 按 `F5` 查看改动记录时
-
-* p -> 查看与当前的差异
-* enter -> 返回那个版本
 
 ---
 
@@ -156,4 +148,5 @@ pip install flake8
 CHANGELOG
 ---
 
- - 2018-01-09: 使用 neovim 替代 vim
+ - 2019-01-09: 使用 neovim 替代 vim
+ - 2019-01-10: 删除 mundo
