@@ -24,7 +24,6 @@ NORMAL 模式下
 
 ### 基本功能
 
-* `F9` -> 切换 复制 / 普通模式
 * `Ctrl` + `c` -> 选中相应的行之后复制到系统黏贴板，需要 xclip 支持
 
 ### IDE Feature
@@ -33,8 +32,7 @@ F 区
 
 * `F5` -> 打开目录树
 * `F6` -> 打开 tarbar
-* `F8` -> Python PEP8 格式化，需要安装 [yapf](https://github.com/google/yapf)
-* `F9` -> pastetoggle
+* `F9` -> pastetoggle（在 nvim 中似乎默认的即可，不需要使用 PASTE 模式）
 
 `<leader>` 键为默认的 \
 

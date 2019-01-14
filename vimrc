@@ -16,6 +16,7 @@ set completeopt-=preview
 
 " gruvbox
 " https://github.com/morhetz/gruvbox/wiki/Terminal-specific
+set termguicolors
 set background=dark
 let g:gruvbox_contrast_dark='soft'
 let g:gruvbox_improved_warnings=1
@@ -76,7 +77,7 @@ autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=
 "-----------------
 
 " SpaceVim config
-let g:spacevim_commandline_prompt = '>'
+let g:spacevim_commandline_prompt = '➭'
 
 " Rainbow parentheses settings
 let g:rainbow_active = 1
@@ -248,7 +249,6 @@ hi illuminatedWord cterm=underline gui=underline
 "------------------
 nmap <F5> :call NERDTreeToggleInCurDir()<cr>
 nmap <F6> :TagbarToggle<cr>
-nmap <F8> :Yapf<cr>
 set pastetoggle=<F9>
 nmap  <D-/> :
 nnoremap <leader>v V`]
