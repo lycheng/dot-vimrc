@@ -44,6 +44,7 @@ Plugin 'junegunn/gv.vim'
 "-------------
 Plugin 'nvie/vim-togglemouse'
 Plugin 'mhinz/vim-hugefile'
+Plugin 'dhruvasagar/vim-table-mode'
 
 "--------------
 " language features

@@ -88,6 +88,12 @@ NORMAL 模式下
 * `<leader> + M` -> toggle 光标高亮
 * `<leader> + N` -> 取消光标高亮
 
+---
+
+[vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)
+
+* `<leader> + tm` -> toggle vim table mode
+
 插件管理
 ---
 
@@ -148,3 +154,4 @@ CHANGELOG
 
  - 2019-01-09: 使用 neovim 替代 vim
  - 2019-01-10: 删除 mundo
+ - 2019-01-14: 添加 vim-table-mode && 移除 Yapf
