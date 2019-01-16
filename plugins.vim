@@ -10,7 +10,7 @@ Plug 'Valloric/YouCompleteMe'
 "--------------
 Plug 'inkarkat/vim-ingo-library'
 Plug 'inkarkat/vim-mark'
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree' , { 'on':  'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'majutsushi/tagbar'
 Plug 'wsdjeg/FlyGrep.vim'
@@ -20,7 +20,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'andymass/vim-matchup'
 Plug 'Yggdroot/indentLine'
-Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
+Plug 'Yggdroot/LeaderF', { 'do': '.\install.sh' }
 
 "--------------
 " Git plugins
