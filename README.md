@@ -5,7 +5,7 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 
 更多的文档可见上方的链接。
 
-个人常用于 Python, Golang 的开发，适用于 vim 8.0（需要 +python 或者之和使用 nvim） 以上的版本
+个人常用于 Python, Golang 的开发，适用于 neovim
 
 快捷键
 ---
@@ -152,6 +152,7 @@ pip install flake8
 CHANGELOG
 ---
 
- - 2019-01-09: 使用 neovim 替代 vim
- - 2019-01-10: 删除 mundo
+ - 2019-01-16: 原有的支持旧的 vim 的配置使用 for-classics-vim 分支来保存，master 分支只支持 neovim
  - 2019-01-14: 添加 vim-table-mode && 移除 Yapf
+ - 2019-01-10: 删除 mundo
+ - 2019-01-09: 使用 neovim 替代 vim
