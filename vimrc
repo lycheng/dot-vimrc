@@ -213,7 +213,7 @@ let g:markdown_syntax_conceal = 0
 " Add support for markdown files in tagbar.
 let g:tagbar_type_markdown = {
     \ 'ctagstype': 'markdown',
-    \ 'ctagsbin' : '~/.vim/bundle/markdown2ctags/markdown2ctags.py',
+    \ 'ctagsbin' : '~/.local/share/nvim/plugged/markdown2ctags/markdown2ctags.py',
     \ 'ctagsargs' : '-f - --sort=yes',
     \ 'kinds' : [
         \ 's:sections',
