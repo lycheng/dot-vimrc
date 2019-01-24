@@ -20,7 +20,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'andymass/vim-matchup'
 Plug 'Yggdroot/indentLine'
-Plug 'Yggdroot/LeaderF', { 'do': '.\install.sh' }
+Plug 'Yggdroot/LeaderF'
 
 "--------------
 " Git plugins
