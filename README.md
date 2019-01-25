@@ -5,9 +5,9 @@ forked from [Maple's Vim config](https://github.com/humiaozuzu/dot-vimrc)
 
 更多的文档可见上方的链接。
 
-个人常用于 Python, Golang 的开发，适用于 neovim
+个人常用于 Python, Golang 的开发，适用于 neovim（或者 Vim 8.0+）
 
-快捷键
+Usage
 ---
 
 ### Vim Basic
@@ -21,12 +21,9 @@ NORMAL 模式下
 * `Ctrl + U` -> 上移半屏
 * `Ctrl + D` -> 下移半屏
 
-
-### 基本功能
+### Features
 
 * `Ctrl` + `c` -> 选中相应的行之后复制到系统黏贴板，需要 xclip 支持
-
-### IDE Feature
 
 F 区
 
@@ -94,36 +91,49 @@ NORMAL 模式下
 
 * `<leader> + tm` -> toggle vim table mode
 
-插件管理
+Install
 ---
 
 ```bash
-# 管理 vim 插件的插件
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# ubuntu 下 neovim 安装
+sudo apt install neovim
+sudo apt install python-neovim
+sudo apt install python3-neovim
+pip install --user --upgrade pynvim
+pip install --user --upgrade neovim
 
+git clone git://github.com/lycheng/dot-vimrc.git ~/.vim
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim .config/nvim
+ln -s ~/.vimrc .config/nvim/init.vim
+```
+
+Plugins Management
+---
+
+```bash
+# console
 # 安装插件
-vim +PluginInstall +qall
+vim +PlugInstall +qall
 
-# vim 下面
+# vim
+# 安装插件
+:PlugInstall
+
 # 更新插件
-:PluginUpdate
+:PlugUpdate
 
 # 安装插件
-:PluginInstall
+:PlugInstall
+
+# 更新依赖
+make update
 ```
 
-
-YCM 编译安装
----
-
-代码补全用的是 [YCM](https://github.com/Valloric/YouCompleteMe)
-
-```bash
-cd ~/.vim/bundle/YouCompleteMe
-./install.py --clang-completer --gocode-completer
-```
-
-主题
+Theme
 ---
 
 使用 [gruvbox](https://github.com/morhetz/gruvbox)
@@ -134,10 +144,10 @@ let g:gruvbox_improved_warnings=1
 colorscheme gruvbox
 ```
 
-其它
+Others
 ---
 
-### 语法检查
+### Syntax Check
 
 使用 [ale](https://github.com/w0rp/ale) 替换 [syntastic](https://github.com/vim-syntastic/syntastic)
 
