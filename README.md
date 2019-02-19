@@ -114,22 +114,20 @@ ln -s ~/.vimrc .config/nvim/init.vim
 Plugins Management
 ---
 
-```bash
-# console
-# 安装插件
-vim +PlugInstall +qall
+在 vim 中执行相应的命令
 
-# vim
+```
 # 安装插件
 :PlugInstall
 
 # 更新插件
 :PlugUpdate
+```
 
-# 安装插件
-:PlugInstall
+也可以使用 make 命令来管理
 
-# 更新依赖
+```
+# 更新插件，编译 YCM，安装依赖，更新 pip 的 neovim 的依赖
 make update
 ```
 

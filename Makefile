@@ -8,7 +8,10 @@ ycm:
 leaderf:
 	cd $(_PLUGGED_PATH)/LeaderF && ./install.sh
 
-update: ycm leaderf
+update-plugins:
+	vim +PlugUpdate +qall
+
+update: update-plugins ycm leaderf
 	pip install --user --upgrade pynvim
 	pip install --user --upgrade neovim
 
