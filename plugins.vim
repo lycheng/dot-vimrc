@@ -51,16 +51,18 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'mattn/emmet-vim'
 Plug 'elzr/vim-json'
 
-"------- markup language -------
-Plug 'tpope/vim-markdown'
-Plug 'jszakmeister/markdown2ctags'
-
 "------- Golang ----------
 Plug 'fatih/vim-go'
 
 "------- lisp -------
 Plug 'kovisoft/slimv'
 Plug 'wlangstroth/vim-racket'
+
+"------- Others -------
+Plug 'tpope/vim-markdown'
+Plug 'jszakmeister/markdown2ctags'
+Plug 'hashivim/vim-terraform'
+
 
 "-------------
 " Looks good

@@ -161,9 +161,6 @@ endfunction
 autocmd FileType python,shell,coffee set commentstring=#\ %s
 autocmd FileType java,c,cpp set commentstring=//\ %s
 
-" the_silver_searcher
-let g:ag_prg="ag --vimgrep"
-
 " ZenCoding
 let g:user_emmet_expandabbr_key='<C-j>'
 
@@ -200,31 +197,6 @@ let g:Lf_WildIgnore = {
             \ 'dir': ['node_modules','.git'],
             \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
             \}
-
-" vim-json
-" https://github.com/elzr/vim-json
-let g:vim_json_syntax_conceal = 0
-
-" vim-markdown
-" https://github.com/tpope/vim-markdown
-let g:markdown_syntax_conceal = 0
-
-" markdown2ctags
-" Add support for markdown files in tagbar.
-let g:tagbar_type_markdown = {
-    \ 'ctagstype': 'markdown',
-    \ 'ctagsbin' : '~/.local/share/nvim/plugged/markdown2ctags/markdown2ctags.py',
-    \ 'ctagsargs' : '-f - --sort=yes',
-    \ 'kinds' : [
-        \ 's:sections',
-        \ 'i:images'
-    \ ],
-    \ 'sro' : '|',
-    \ 'kind2scope' : {
-        \ 's' : 'section',
-    \ },
-    \ 'sort': 0,
-\ }
 
 " ale
 let g:ale_sign_error = 'E'
@@ -314,8 +286,7 @@ nnoremap ; :
 " languages spec
 "-------------
 
-" golang
-" with vim-go
+" golang with vim-go
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
@@ -346,3 +317,34 @@ let g:ale_python_flake8_executable = 'flake8'
 " E712 comparison to False should be 'if cond is False:' or 'if not cond:'
 " E722 do not use bare except
 let g:ale_python_flake8_options = '--ignore=E501,E402,E711,E712,E722'
+
+" vim-terraform
+let g:terraform_align=1
+let g:terraform_remap_spacebar=1
+let g:terraform_commentstring='//%s'
+let g:terraform_fmt_on_save=1
+
+" vim-json
+" https://github.com/elzr/vim-json
+let g:vim_json_syntax_conceal = 0
+
+" vim-markdown
+" https://github.com/tpope/vim-markdown
+let g:markdown_syntax_conceal = 0
+
+" markdown2ctags
+" Add support for markdown files in tagbar.
+let g:tagbar_type_markdown = {
+    \ 'ctagstype': 'markdown',
+    \ 'ctagsbin' : '~/.local/share/nvim/plugged/markdown2ctags/markdown2ctags.py',
+    \ 'ctagsargs' : '-f - --sort=yes',
+    \ 'kinds' : [
+        \ 's:sections',
+        \ 'i:images'
+    \ ],
+    \ 'sro' : '|',
+    \ 'kind2scope' : {
+        \ 's' : 'section',
+    \ },
+    \ 'sort': 0,
+\ }
