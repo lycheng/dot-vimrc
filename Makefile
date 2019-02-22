@@ -14,4 +14,5 @@ update-plugins:
 update: update-plugins ycm leaderf
 	pip install --user --upgrade pynvim
 	pip install --user --upgrade neovim
+	pip install --user --upgrade flake8
 

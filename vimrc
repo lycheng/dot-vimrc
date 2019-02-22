@@ -18,13 +18,9 @@ set completeopt-=preview
 " https://github.com/morhetz/gruvbox/wiki/Terminal-specific
 set termguicolors
 set background=dark
-let g:gruvbox_contrast_dark='soft'
-let g:gruvbox_improved_warnings=1
-colorscheme gruvbox
-
-" highlight current line
-set cursorline cursorcolumn
-autocmd Colorscheme * highlight FoldColumn guifg=bg guibg=bg
+" let g:gruvbox_contrast_dark='soft'
+" let g:gruvbox_improved_warnings=1
+colorscheme iceberg
 
 "--------
 " Common
