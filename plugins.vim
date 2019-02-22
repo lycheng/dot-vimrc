@@ -10,8 +10,7 @@ Plug 'Valloric/YouCompleteMe'
 "--------------
 Plug 'inkarkat/vim-ingo-library'
 Plug 'inkarkat/vim-mark'
-Plug 'scrooloose/nerdtree' , { 'on':  'NERDTreeToggle' }
-Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 Plug 'wsdjeg/FlyGrep.vim'
 Plug 'w0rp/ale'
@@ -27,6 +26,7 @@ Plug 'Yggdroot/LeaderF'
 "--------------
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/gv.vim'
 
@@ -62,7 +62,6 @@ Plug 'wlangstroth/vim-racket'
 Plug 'tpope/vim-markdown'
 Plug 'jszakmeister/markdown2ctags'
 Plug 'hashivim/vim-terraform'
-
 
 "-------------
 " Looks good
