@@ -77,5 +77,6 @@ Plug 'RRethy/vim-illuminate'
 Plug 'morhetz/gruvbox'
 Plug 'cocopon/iceberg.vim'
 Plug 'raphamorim/lucario'
+Plug 'liuchengxu/space-vim-dark'
 
 call plug#end()

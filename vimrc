@@ -20,7 +20,9 @@ set termguicolors
 set background=dark
 " let g:gruvbox_contrast_dark='soft'
 " let g:gruvbox_improved_warnings=1
-colorscheme iceberg
+" colorscheme iceberg
+color space-vim-dark
+hi LineNr ctermbg=NONE guibg=NONE
 
 "--------
 " Common
