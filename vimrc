@@ -13,16 +13,18 @@ set completeopt-=preview
 "--------
 " Vim UI
 "--------
+set termguicolors
 
 " gruvbox
 " https://github.com/morhetz/gruvbox/wiki/Terminal-specific
-set termguicolors
-set background=dark
+" set background=dark
 " let g:gruvbox_contrast_dark='soft'
 " let g:gruvbox_improved_warnings=1
 " colorscheme iceberg
-color space-vim-dark
-hi LineNr ctermbg=NONE guibg=NONE
+
+" ayu
+let ayucolor="dark" " for mirage version of theme
+colorscheme ayu
 
 "--------
 " Common

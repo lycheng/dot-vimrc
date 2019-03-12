@@ -75,8 +75,6 @@ Plug 'RRethy/vim-illuminate'
 " Color Schemes
 "--------------
 Plug 'morhetz/gruvbox'
-Plug 'cocopon/iceberg.vim'
-Plug 'raphamorim/lucario'
-Plug 'liuchengxu/space-vim-dark'
+Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
