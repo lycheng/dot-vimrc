@@ -17,14 +17,11 @@ set termguicolors
 
 " gruvbox
 " https://github.com/morhetz/gruvbox/wiki/Terminal-specific
-" set background=dark
-" let g:gruvbox_contrast_dark='soft'
-" let g:gruvbox_improved_warnings=1
-" colorscheme iceberg
-
-" ayu
-let ayucolor="dark" " for mirage version of theme
-colorscheme ayu
+set background=dark
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_improved_warnings=1
+let g:gruvbox_improved_strings=1
+colorscheme gruvbox
 
 "--------
 " Common
@@ -316,7 +313,8 @@ let g:ale_python_flake8_executable = 'flake8'
 " E711 comparison to None should be 'if cond is None:'
 " E712 comparison to False should be 'if cond is False:' or 'if not cond:'
 " E722 do not use bare except
-let g:ale_python_flake8_options = '--ignore=E501,E402,E711,E712,E722'
+" C901 function is too complex
+let g:ale_python_flake8_options = '--ignore=E501,E402,E711,E712,E722,C901'
 
 " vim-terraform
 let g:terraform_align=1
