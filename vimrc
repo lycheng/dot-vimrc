@@ -75,6 +75,7 @@ autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=
 
 " SpaceVim config
 let g:spacevim_commandline_prompt = '➭'
+let g:spacevim_debug_level = 1
 
 " Rainbow parentheses settings
 let g:rainbow_active = 1
