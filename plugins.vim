@@ -45,6 +45,7 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'lepture/vim-jinja'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'nvie/vim-flake8'
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 
 "------- web frontend ----------
 Plug 'mustache/vim-mustache-handlebars'
