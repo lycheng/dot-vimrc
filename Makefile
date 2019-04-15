@@ -1,6 +1,7 @@
 .PHONY: ycm leaderf
 
 _PLUGGED_PATH=$(HOME)/.local/share/nvim/plugged
+_PIP_PATH=/usr/local/bin/pip
 
 ycm:
 	cd $(_PLUGGED_PATH)/YouCompleteMe && ./install.py --clang-completer --gocode-completer
@@ -12,7 +13,7 @@ update-plugins:
 	vim +PlugUpdate +qall
 
 update: update-plugins ycm leaderf
-	pip install --user --upgrade pynvim
-	pip install --user --upgrade neovim
-	pip install --user --upgrade flake8
+	$(_PIP_PATH) install --upgrade pynvim
+	$(_PIP_PATH) install --upgrade neovim
+	$(_PIP_PATH) install --upgrade flake8
 
