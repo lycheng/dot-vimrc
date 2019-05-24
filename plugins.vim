@@ -55,9 +55,12 @@ Plug 'elzr/vim-json'
 "------- Golang ----------
 Plug 'fatih/vim-go'
 
-"------- lisp -------
+"------- Lisp -------
 Plug 'kovisoft/slimv'
 Plug 'wlangstroth/vim-racket'
+
+"------- Rust -------
+Plug 'rust-lang/rust.vim'
 
 "------- Others -------
 Plug 'tpope/vim-markdown'
@@ -77,5 +80,6 @@ Plug 'RRethy/vim-illuminate'
 "--------------
 Plug 'morhetz/gruvbox'
 Plug 'ayu-theme/ayu-vim'
+Plug 'rakr/vim-one'
 
 call plug#end()

@@ -17,10 +17,15 @@ set termguicolors
 
 " gruvbox
 " https://github.com/morhetz/gruvbox/wiki/Terminal-specific
+" set background=dark
+" let g:gruvbox_contrast_dark='hard'
+" let g:gruvbox_improved_warnings=1
+" colorscheme gruvbox
+
+
+" vim-one
+colorscheme one
 set background=dark
-let g:gruvbox_contrast_dark='hard'
-let g:gruvbox_improved_warnings=1
-colorscheme gruvbox
 
 "--------
 " Common
@@ -67,6 +72,9 @@ autocmd FileType go setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 autocmd FileType html,htmldjango,xhtml,haml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
 autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
+
+" groovy highlight for Jenkinsfile
+au BufNewFile,BufRead Jenkinsfile setf groovy
 
 " Neovim
 let g:python_host_prog = '/usr/bin/python'
@@ -116,7 +124,7 @@ let g:tagbar_sort=0
 let g:tagbar_compact=1
 
 " airline
-let g:airline_theme="simple"
+let g:airline_theme="one"
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#symbol = '!'
@@ -350,3 +358,6 @@ let g:tagbar_type_markdown = {
     \ },
     \ 'sort': 0,
 \ }
+
+" Rust
+let g:rustfmt_autosave = 1
