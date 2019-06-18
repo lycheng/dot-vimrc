@@ -245,7 +245,14 @@ nmap <Leader>M <Plug>MarkToggle
 nmap <Leader>N <Plug>MarkAllClear
 
 " FlyGrep.vim
-nmap <leader>a :FlyGrep <cr>
+" nmap <leader>a :FlyGrep <cr>
+
+" vim-grepper
+nnoremap <leader>a :Grepper -tool ag<cr>
+nnoremap <leader>A :Grepper -tool ag -cword -noprompt<cr>
+
+nmap gs <plug>(GrepperOperator)
+xmap gs <plug>(GrepperOperator)
 
 " YCM
 map <leader>g :YcmCompleter GoTo<CR>
