@@ -35,8 +35,6 @@ F 区
 
 * `:vs` -> 垂直分隔再打开当前的文件, 可用 `Ctrl + p` 进行切换文件
 * `Ctrl` + `h/j/k/l` -> 多个 window 间的跳转
-* `<leader> + a` -> 使用 [mhinz/vim-grepper](https://github.com/mhinz/vim-grepper) 进行在当前目录下进行查找关键字
-* `<leader> + A` -> 使用 [mhinz/vim-grepper](https://github.com/mhinz/vim-grepper) 进行在当前目录下查找当前光标选中的关键字
 * `<leader> + g` -> 跳转到当前符号的定义或声明，YCM [GoTo](https://github.com/Valloric/YouCompleteMe#the-goto-subcommand)
 * `<leader> + G` -> 跳转到当前文件的 github / bitbucket / ... 链接，如果选了某行则调到那一行
 * `<leader> + f` -> 列出当前符号的引用（只适用于 js, py, ts），YCM [GoToReferences](https://github.com/Valloric/YouCompleteMe#the-gotoreferences-subcommand)
@@ -91,6 +89,13 @@ NORMAL 模式下
 [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)
 
 * `<leader> + tm` -> toggle vim table mode
+
+---
+
+[dyng/ctrlsf.vim](https://github.com/dyng/ctrlsf.vim) 文本搜索
+
+* `<leader> + a` -> 在当前目录下进行查找关键字
+* `<leader> + A` -> Visual 模式下，在当前目录下查找当前光标选中的关键字
 
 Install
 ---

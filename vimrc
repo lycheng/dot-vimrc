@@ -228,6 +228,14 @@ let g:ale_linters = {
 let g:Illuminate_delay = 200
 hi illuminatedWord cterm=underline gui=underline
 
+" dyng/ctrlsf.vim
+let g:ctrlsf_confirm_save = 1
+let g:ctrlsf_auto_focus = {
+    \ "at": "start"
+    \ }
+let g:ctrlsf_case_sensitive = 'no'
+let g:ctrlsf_search_mode = 'async'
+
 "------------------
 " Keybindings for plugin toggle
 "------------------
@@ -248,8 +256,12 @@ nmap <Leader>N <Plug>MarkAllClear
 " nmap <leader>a :FlyGrep <cr>
 
 " vim-grepper
-nnoremap <leader>a :Grepper -tool ag<cr>
-nnoremap <leader>A :Grepper -tool ag -cword -noprompt<cr>
+" nnoremap <leader>a :Grepper -tool ag<cr>
+" nnoremap <leader>A :Grepper -tool ag -cword -noprompt<cr>
+
+" CtrlSF
+nmap <leader>a <Plug>CtrlSFPrompt
+vmap <leader>A <Plug>CtrlSFVwordExec
 
 nmap gs <plug>(GrepperOperator)
 xmap gs <plug>(GrepperOperator)

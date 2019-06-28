@@ -14,6 +14,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 " Plug 'wsdjeg/FlyGrep.vim'
 Plug 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
+Plug 'dyng/ctrlsf.vim'
 Plug 'w0rp/ale'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-commentary'
