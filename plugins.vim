@@ -3,7 +3,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 "------------------
 " YouCompleteMe
 "------------------
-Plug 'Valloric/YouCompleteMe'
+Plug 'ycm-core/YouCompleteMe'
 
 "--------------
 " IDE features
