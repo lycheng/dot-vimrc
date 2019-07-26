@@ -38,6 +38,7 @@ Plug 'junegunn/gv.vim'
 Plug 'nvie/vim-togglemouse'
 Plug 'mhinz/vim-hugefile'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'chrisbra/csv.vim'
 
 "--------------
 " language features
