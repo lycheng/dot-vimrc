@@ -11,6 +11,7 @@ leaderf:
 
 update-plugins:
 	vim +PlugUpdate +qall
+	vim +GoUpdateBinaries +qall
 
 update: update-plugins ycm leaderf
 	$(_PIP_PATH) install --upgrade pynvim --user

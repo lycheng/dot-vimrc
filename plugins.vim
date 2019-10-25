@@ -58,10 +58,6 @@ Plug 'elzr/vim-json'
 "------- Golang ----------
 Plug 'fatih/vim-go'
 
-"------- Lisp -------
-Plug 'kovisoft/slimv'
-Plug 'wlangstroth/vim-racket'
-
 "------- Rust -------
 Plug 'rust-lang/rust.vim'
 
