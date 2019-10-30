@@ -97,6 +97,13 @@ NORMAL 模式下
 * `<leader> + a` -> 在当前目录下进行查找关键字
 * `<leader> + A` -> Visual 模式下，在当前目录下查找当前光标选中的关键字
 
+---
+
+[machakann/vim-swap](https://github.com/machakann/vim-swap) 函数交换参数
+
+* `g>` \ `g<` -> 交换函数参数位置
+* `gs` -> 交互操作，可见 [说明](https://github.com/machakann/vim-swap#gs)
+
 Install
 ---
 

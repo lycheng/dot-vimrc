@@ -17,4 +17,3 @@ update: update-plugins ycm leaderf
 	$(_PIP_PATH) install --upgrade pynvim --user
 	$(_PIP_PATH) install --upgrade neovim --user
 	$(_PIP_PATH) install --upgrade flake8 --user
-

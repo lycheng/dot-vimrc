@@ -12,7 +12,6 @@ Plug 'inkarkat/vim-ingo-library'
 Plug 'inkarkat/vim-mark'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
-" Plug 'wsdjeg/FlyGrep.vim'
 Plug 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
 Plug 'dyng/ctrlsf.vim'
 Plug 'w0rp/ale'
@@ -22,6 +21,7 @@ Plug 'tpope/vim-surround'
 Plug 'andymass/vim-matchup'
 Plug 'Yggdroot/indentLine'
 Plug 'Yggdroot/LeaderF'
+Plug 'machakann/vim-swap'
 
 "--------------
 " Git plugins
@@ -52,6 +52,7 @@ Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 
 "------- web frontend ----------
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'mengelbrecht/lightline-bufferline'
 Plug 'mattn/emmet-vim'
 Plug 'elzr/vim-json'
 
@@ -69,10 +70,10 @@ Plug 'hashivim/vim-terraform'
 "-------------
 " Looks good
 "-------------
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'luochen1990/rainbow'
 Plug 'RRethy/vim-illuminate'
+Plug 'mengelbrecht/lightline-bufferline'
 
 "--------------
 " Color Schemes
