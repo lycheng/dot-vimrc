@@ -70,10 +70,11 @@ Plug 'hashivim/vim-terraform'
 "-------------
 " Looks good
 "-------------
-Plug 'itchyny/lightline.vim'
 Plug 'luochen1990/rainbow'
 Plug 'RRethy/vim-illuminate'
 Plug 'mengelbrecht/lightline-bufferline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 "--------------
 " Color Schemes

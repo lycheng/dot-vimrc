@@ -227,35 +227,14 @@ let g:ctrlsf_auto_focus = {
 let g:ctrlsf_case_sensitive = 'no'
 let g:ctrlsf_search_mode = 'async'
 
-" itchyny/lightline.vim
-set laststatus=2
-set showtabline=2
-let g:lightline = {
-  \   'colorscheme': 'one',
-  \   'active': {
-  \     'left':[ [ 'mode', 'paste' ],
-  \              [ 'gitbranch', 'readonly', 'filename', 'modified' ]
-  \     ]
-  \   },
-	\   'component': {
-	\     'lineinfo': '%3l:%-2v',
-	\   },
-  \   'component_function': {
-  \     'gitbranch': 'fugitive#head',
-  \   }
-  \ }
-let g:lightline.separator = {
-	\   'left': '', 'right': ''
-  \}
-let g:lightline.subseparator = {
-	\   'left': '', 'right': ''
-  \}
-
-let g:lightline#bufferline#shorten_path = 1
-let g:lightline#bufferline#unnamed      = '[No Name]'
-let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
-let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
-let g:lightline.component_type   = {'buffers': 'tabsel'}
+" vim-airline/vim-airline
+let g:airline_theme="luna"
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#whitespace#symbol = '!'
+let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 "------------------
 " Keybindings for plugin toggle
