@@ -14,6 +14,4 @@ update-plugins:
 	vim +GoUpdateBinaries +qall
 
 update: update-plugins ycm leaderf
-	$(_PIP_PATH) install --upgrade pynvim --user
-	$(_PIP_PATH) install --upgrade neovim --user
-	$(_PIP_PATH) install --upgrade flake8 --user
+	$(_PIP_PATH) install -r extra/requirements --upgrade --user -i https://pypi.tuna.tsinghua.edu.cn/simple

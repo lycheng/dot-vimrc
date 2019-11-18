@@ -185,7 +185,7 @@ highlight PmenuSel ctermfg=white ctermbg=blue
 
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_python_binary_path="python"
-let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.vim/extra/ycm_extra_conf.py'
 
 augroup load_ycm
   autocmd!
@@ -245,8 +245,8 @@ set pastetoggle=<F9>
 nmap  <D-/> :
 nnoremap <leader>v V`]
 nnoremap ff :LeaderfBuffer<cr>
-nnoremap <leader>t :LeaderfBufTag<cr>
-nnoremap <leader>T :LeaderfBufTagAll<cr>
+nnoremap tt :LeaderfBufTag<cr>
+nnoremap TT :LeaderfBufTagAll<cr>
 
 " vim-mark
 nmap <Leader>M <Plug>MarkToggle
