@@ -49,6 +49,8 @@ F 区
 * `ff` -> 列出当前打开的文件列表
 * `tt` -> 列出当前文件的 symbol 列表
 * `TT` -> 列出当前打开的所有文件的 symbol 列表
+* `<leader> + a` -> 在当前目录下进行查找关键字
+* `<leader> + A` -> Visual 模式下，在当前目录下查找当前光标选中的关键字
 
 ---
 
@@ -89,13 +91,6 @@ NORMAL 模式下
 [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)
 
 * `<leader> + tm` -> toggle vim table mode
-
----
-
-[dyng/ctrlsf.vim](https://github.com/dyng/ctrlsf.vim) 文本搜索
-
-* `<leader> + a` -> 在当前目录下进行查找关键字
-* `<leader> + A` -> Visual 模式下，在当前目录下查找当前光标选中的关键字
 
 ---
 
@@ -177,3 +172,4 @@ CHANGELOG
  - 2019-01-14: 添加 vim-table-mode && 移除 Yapf
  - 2019-01-10: 删除 mundo
  - 2019-01-09: 使用 neovim 替代 vim
+ - 2019-11-20: Leaderf 开启 popup 特性，只支持 neovim 0.4.x 以上的版本

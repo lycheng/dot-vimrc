@@ -195,11 +195,20 @@ augroup END
 
 " LeaderF
 let g:Lf_ShortcutF = '<C-P>'
+let g:Lf_WindowPosition = "popup"
 let g:Lf_DefaultMode  = 'FullPath'
+let g:Lf_PreviewInPopup = 1
 let g:Lf_WildIgnore = {
             \ 'dir': ['node_modules','.git'],
             \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
             \}
+
+nnoremap ff :LeaderfBuffer<cr>
+nnoremap tt :LeaderfBufTag<cr>
+nnoremap TT :LeaderfBufTagAll<cr>
+
+nmap <leader>a <Plug>LeaderfRgPrompt
+nmap <leader>A <Plug>LeaderfRgCwordRegexBoundary
 
 " ale
 let g:ale_sign_error = 'E'
@@ -219,14 +228,6 @@ let g:ale_linters = {
 let g:Illuminate_delay = 200
 hi illuminatedWord cterm=underline gui=underline
 
-" dyng/ctrlsf.vim
-let g:ctrlsf_confirm_save = 1
-let g:ctrlsf_auto_focus = {
-    \ "at": "start"
-    \ }
-let g:ctrlsf_case_sensitive = 'no'
-let g:ctrlsf_search_mode = 'async'
-
 " vim-airline/vim-airline
 let g:airline_theme="luna"
 let g:airline_powerline_fonts = 1
@@ -244,27 +245,10 @@ nmap <F6> :TagbarToggle<cr>
 set pastetoggle=<F9>
 nmap  <D-/> :
 nnoremap <leader>v V`]
-nnoremap ff :LeaderfBuffer<cr>
-nnoremap tt :LeaderfBufTag<cr>
-nnoremap TT :LeaderfBufTagAll<cr>
 
 " vim-mark
 nmap <Leader>M <Plug>MarkToggle
 nmap <Leader>N <Plug>MarkAllClear
-
-" FlyGrep.vim
-" nmap <leader>a :FlyGrep <cr>
-
-" vim-grepper
-" nnoremap <leader>a :Grepper -tool ag<cr>
-" nnoremap <leader>A :Grepper -tool ag -cword -noprompt<cr>
-
-" CtrlSF
-nmap <leader>a <Plug>CtrlSFPrompt
-vmap <leader>A <Plug>CtrlSFVwordExec
-
-nmap gs <plug>(GrepperOperator)
-xmap gs <plug>(GrepperOperator)
 
 " YCM
 map <leader>g :YcmCompleter GoTo<CR>
