@@ -21,6 +21,7 @@ Plug 'andymass/vim-matchup'
 Plug 'Yggdroot/indentLine'
 Plug 'Yggdroot/LeaderF'
 Plug 'machakann/vim-swap'
+Plug 'easymotion/vim-easymotion'
 
 "--------------
 " Git plugins
