@@ -80,7 +80,6 @@ Plug 'vim-airline/vim-airline-themes'
 " Color Schemes
 "--------------
 Plug 'morhetz/gruvbox'
-Plug 'ayu-theme/ayu-vim'
-Plug 'rakr/vim-one'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
