@@ -17,13 +17,10 @@ set termguicolors
 
 " gruvbox
 " https://github.com/morhetz/gruvbox/wiki/Terminal-specific
-" set background=dark
-" let g:gruvbox_contrast_dark='hard'
-" let g:gruvbox_improved_warnings=1
-" colorscheme gruvbox
-
-" nord
-colorscheme nord
+set background=dark
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_improved_warnings=1
+colorscheme gruvbox
 
 "--------
 " Common
