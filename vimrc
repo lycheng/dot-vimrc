@@ -189,6 +189,7 @@ augroup load_ycm
 augroup END
 
 " LeaderF
+let g:Lf_ShowDevIcons = 0
 let g:Lf_ShortcutF = '<C-P>'
 let g:Lf_WindowPosition = "popup"
 let g:Lf_DefaultMode  = 'FullPath'
