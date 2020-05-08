@@ -66,6 +66,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-markdown'
 Plug 'jszakmeister/markdown2ctags'
 Plug 'hashivim/vim-terraform'
+Plug 'ekalinin/Dockerfile.vim'
 
 "-------------
 " Looks good
