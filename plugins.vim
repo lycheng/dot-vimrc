@@ -12,7 +12,6 @@ Plug 'inkarkat/vim-ingo-library'
 Plug 'inkarkat/vim-mark'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
-Plug 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
 Plug 'w0rp/ale'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-commentary'
@@ -66,7 +65,6 @@ Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-markdown'
 Plug 'jszakmeister/markdown2ctags'
 Plug 'hashivim/vim-terraform'
-Plug 'ekalinin/Dockerfile.vim'
 
 "-------------
 " Looks good
@@ -76,10 +74,12 @@ Plug 'RRethy/vim-illuminate'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'sheerun/vim-polyglot'
 
 "--------------
 " Color Schemes
 "--------------
 Plug 'morhetz/gruvbox'
+Plug 'sainnhe/gruvbox-material'
 
 call plug#end()

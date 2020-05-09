@@ -17,10 +17,15 @@ set termguicolors
 
 " gruvbox
 " https://github.com/morhetz/gruvbox/wiki/Terminal-specific
+" set background=dark
+" let g:gruvbox_contrast_dark='hard'
+" let g:gruvbox_improved_warnings=1
+" colorscheme gruvbox
+
+" gruvbox-material
 set background=dark
-let g:gruvbox_contrast_dark='hard'
-let g:gruvbox_improved_warnings=1
-colorscheme gruvbox
+let g:gruvbox_material_background = 'hard'
+colorscheme gruvbox-material
 
 "--------
 " Common
@@ -225,7 +230,7 @@ let g:Illuminate_delay = 200
 hi illuminatedWord cterm=underline gui=underline
 
 " vim-airline/vim-airline
-let g:airline_theme="luna"
+let g:airline_theme="badwolf"
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#symbol = '!'
