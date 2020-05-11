@@ -367,9 +367,8 @@ let g:terraform_fmt_on_save=1
 " https://github.com/elzr/vim-json
 let g:vim_json_syntax_conceal = 0
 
-" vim-markdown
-" https://github.com/tpope/vim-markdown
-let g:markdown_syntax_conceal = 0
+" markdown syntax
+let g:vim_markdown_conceal = 0
 
 " markdown2ctags
 " Add support for markdown files in tagbar.

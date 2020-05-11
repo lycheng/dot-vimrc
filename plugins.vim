@@ -62,9 +62,9 @@ Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
 
 "------- Others -------
-Plug 'tpope/vim-markdown'
 Plug 'jszakmeister/markdown2ctags'
 Plug 'hashivim/vim-terraform'
+Plug 'sheerun/vim-polyglot'
 
 "-------------
 " Looks good
@@ -74,7 +74,6 @@ Plug 'RRethy/vim-illuminate'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'sheerun/vim-polyglot'
 
 "--------------
 " Color Schemes
