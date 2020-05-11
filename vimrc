@@ -369,6 +369,7 @@ let g:vim_json_syntax_conceal = 0
 
 " markdown syntax
 let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
 
 " markdown2ctags
 " Add support for markdown files in tagbar.
