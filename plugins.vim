@@ -80,5 +80,6 @@ Plug 'vim-airline/vim-airline-themes'
 "--------------
 Plug 'morhetz/gruvbox'
 Plug 'sainnhe/gruvbox-material'
+Plug 'tomasiser/vim-code-dark'
 
 call plug#end()
