@@ -28,7 +28,7 @@ set termguicolors
 " colorscheme gruvbox-material
 
 " onedark
-colorscheme codedark
+colorscheme iceberg
 
 "--------
 " Common
@@ -233,7 +233,7 @@ let g:Illuminate_delay = 200
 hi illuminatedWord cterm=underline gui=underline
 
 " vim-airline/vim-airline
-let g:airline_theme="codedark"
+let g:airline_theme="badwolf"
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#symbol = '!'

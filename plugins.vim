@@ -81,5 +81,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'sainnhe/gruvbox-material'
 Plug 'tomasiser/vim-code-dark'
+Plug 'cocopon/iceberg.vim'
 
 call plug#end()
