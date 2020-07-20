@@ -28,7 +28,11 @@ set termguicolors
 " colorscheme gruvbox-material
 
 " onedark
-colorscheme iceberg
+" colorscheme iceberg
+
+" ayu
+let ayucolor="mirage" " for mirage version of theme
+colorscheme ayu
 
 "--------
 " Common
