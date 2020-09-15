@@ -1,3 +1,6 @@
+" polyglot
+let g:polyglot_disabled = ['groovy']
+
 source ~/.vim/plugins.vim
 
 " encoding dectection
@@ -83,9 +86,6 @@ autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=
 " makefile tab problem
 autocmd FileType make setlocal noexpandtab
 
-" groovy highlight for Jenkinsfile
-au BufNewFile,BufRead Jenkinsfile setf groovy
-
 " Neovim
 let g:python_host_prog = '/usr/bin/python'
 let g:python3_host_prog = '/usr/bin/python3'
@@ -142,14 +142,14 @@ let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
 
 let g:NERDTreeGitStatusIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
+    \ "Modified"  : "*",
+    \ "Staged"    : "+",
+    \ "Untracked" : "*",
+    \ "Renamed"   : ">",
+    \ "Unmerged"  : "=",
+    \ "Deleted"   : "x",
+    \ "Dirty"     : "x",
+    \ "Clean"     : "v",
     \ "Unknown"   : "?"
     \ }
 
