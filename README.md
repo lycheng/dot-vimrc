@@ -31,7 +31,7 @@ F 区
 * `F6` -> 打开 tarbar
 * `F9` -> pastetoggle（在 nvim 中似乎默认的即可，不需要使用 PASTE 模式）
 
-`<leader>` 键为默认的 \
+`<leader>` 键为空格键
 
 * `:vs` -> 垂直分隔再打开当前的文件, 可用 `Ctrl + p` 进行切换文件
 * `Ctrl` + `h/j/k/l` -> 多个 window 间的跳转
@@ -168,8 +168,9 @@ pip install flake8
 CHANGELOG
 ---
 
- - 2019-01-16: 原有的支持旧的 vim 的配置使用 for-classics-vim 分支来保存，master 分支只支持 neovim
+ - 2020-09-16: 使用 space 替代默认的 leader 键
+ - 2019-11-20: Leaderf 开启 popup 特性，只支持 neovim 0.4.x 以上的版本
+ - 2019-01-16: ~~原有的支持旧的 vim 的配置使用 for-classics-vim 分支来保存，~~master 分支只支持 neovim
  - 2019-01-14: 添加 vim-table-mode && 移除 Yapf
  - 2019-01-10: 删除 mundo
  - 2019-01-09: 使用 neovim 替代 vim
- - 2019-11-20: Leaderf 开启 popup 特性，只支持 neovim 0.4.x 以上的版本

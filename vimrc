@@ -41,6 +41,9 @@ colorscheme ayu
 " Common
 "--------
 
+noremap <Space> <Nop>
+let mapleader=" "
+
 " search
 set incsearch
 set ignorecase
