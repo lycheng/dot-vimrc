@@ -168,6 +168,7 @@ pip install flake8
 CHANGELOG
 ---
 
+ - 2020-09-24: 添加 mhinz/vim-startify
  - 2020-09-16: 使用 space 替代默认的 leader 键
  - 2019-11-20: Leaderf 开启 popup 特性，只支持 neovim 0.4.x 以上的版本
  - 2019-01-16: ~~原有的支持旧的 vim 的配置使用 for-classics-vim 分支来保存，~~master 分支只支持 neovim

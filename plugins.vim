@@ -65,6 +65,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'jszakmeister/markdown2ctags'
 Plug 'hashivim/vim-terraform'
 Plug 'sheerun/vim-polyglot'
+Plug 'mhinz/vim-startify'
 
 "-------------
 " Looks good
