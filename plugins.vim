@@ -18,7 +18,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'andymass/vim-matchup'
 Plug 'Yggdroot/indentLine'
-Plug 'Yggdroot/LeaderF'
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'machakann/vim-swap'
 Plug 'easymotion/vim-easymotion'
 
