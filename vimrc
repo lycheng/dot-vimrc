@@ -20,8 +20,8 @@ set termguicolors
 
 " gruvbox
 " https://github.com/morhetz/gruvbox/wiki/Terminal-specific
-set background=dark
-let g:gruvbox_contrast_dark='soft'
+set background=light
+let g:gruvbox_contrast_light='soft'
 let g:gruvbox_improved_warnings=1
 colorscheme gruvbox
 
