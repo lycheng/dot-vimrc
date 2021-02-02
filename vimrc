@@ -321,6 +321,16 @@ autocmd BufReadPost *
 " copy to system clipboard
 vmap <C-c> :<Esc>`>a<CR><Esc>mx`<i<CR><Esc>my'xk$v'y!xclip -selection c<CR>u
 
+" wsl2 to clip.exe
+" from: https://github.com/microsoft/WSL/issues/4440#issuecomment-638884035
+let s:clip = '/mnt/c/Windows/System32/clip.exe'
+if executable(s:clip)
+    augroup WSLYank
+        autocmd!
+        autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+    augroup END
+endif
+
 " w!! to sudo & write a file
 cmap w!! %!sudo tee >/dev/null %
 
