@@ -21,7 +21,7 @@ set termguicolors
 " gruvbox
 " https://github.com/morhetz/gruvbox/wiki/Terminal-specific
 set background=light
-let g:gruvbox_contrast_light='soft'
+let g:gruvbox_contrast_light='medium'
 let g:gruvbox_improved_warnings=1
 colorscheme gruvbox
 
@@ -240,7 +240,7 @@ let g:Illuminate_delay = 200
 hi illuminatedWord cterm=underline gui=underline
 
 " vim-airline/vim-airline
-let g:airline_theme="base16"
+let g:airline_theme="papercolor"
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#symbol = '!'
