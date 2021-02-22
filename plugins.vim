@@ -83,5 +83,6 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'tomasiser/vim-code-dark'
 Plug 'cocopon/iceberg.vim'
 Plug 'ayu-theme/ayu-vim'
+Plug 'rakr/vim-one'
 
 call plug#end()
