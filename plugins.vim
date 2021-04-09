@@ -60,6 +60,10 @@ Plug 'fatih/vim-go'
 "------- Rust -------
 Plug 'rust-lang/rust.vim'
 
+"------- OCaml -------
+Plug 'ocaml/vim-ocaml'
+
+
 "------- Others -------
 Plug 'jszakmeister/markdown2ctags'
 Plug 'hashivim/vim-terraform'
